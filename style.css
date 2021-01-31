@@ -2,10 +2,18 @@ body {
     background-color: rgb(235, 173, 196);
 }
 
-#com1 {
+#communityagreement {
     position: absolute;
     top: 300px;
     left: 200px;
     background: crimson;
+    font-size: 30px;
+}
+
+#studioproject1 {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    background: rgb(126, 216, 216);
     font-size: 30px;
 }

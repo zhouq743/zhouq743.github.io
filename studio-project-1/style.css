@@ -1,0 +1,89 @@
+html{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#map1{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 1399px;
+    height: 768px;
+    background: url('./graphics/background.png');
+    background-size:100% 100%;
+}
+
+#googlemap{
+    position: absolute;
+    left: 48.2094px;
+    top: 65.484px;
+    width: 309.6616px;
+    height: 156.5778px;
+}
+
+#minecraft{
+    position: absolute;
+    left: 880.2094px;
+    top: 45.484px;
+    width: 319.689px;
+    height: 185.4048px;
+}
+
+#youtube{
+    position: absolute;
+    left: 510.2094px;
+    top: 220.484px;
+    width: 191.195px;
+    height: 107.2959px;
+}
+
+#title{
+    position: absolute;
+    left: 500px;
+    top: 110px;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    line-height: 20px;
+}
+p{
+    position: absolute;
+    font-size: 20px;
+}
+#sen1{
+    top: 610px;
+    left: 150px;
+}
+#sen2{
+    top: 500px;
+    left: 315px;
+}
+#sen3{
+    top: 400px;
+    left: 860px;
+    width: 200px;
+}
+#sen4{
+    top: 500px;
+    left: 1140px;
+    width: 200px;
+}
+#mapt{
+    position: absolute;
+    font-family: serif;
+    top: 210px;
+    left: 125px;
+}
+#ytt{
+    position: absolute;
+    left: 520px;
+    top: 310px;
+    font-family: serif;
+}
+#mct{
+    position: absolute;
+    font-family: serif;
+    top: 210px;
+    left: 1020px;
+}
