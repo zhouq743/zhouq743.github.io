@@ -17,3 +17,11 @@ body {
     background: rgb(126, 216, 216);
     font-size: 30px;
 }
+
+#labassign1{
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    background: rgb(219, 211, 139);
+    font-size: 30px;
+}
