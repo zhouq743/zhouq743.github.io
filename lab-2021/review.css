@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(153, 255, 51, 0.2);
+}
+
+blockquote{
+text-align: right;
+margin: 0;
+}
+
+#im{
+    display: inline-block;
+}
+
+ul{
+    list-style-type: square;
+}
+
+#l1{
+    background-color: darkgray;
+}
+
+#l2{
+    background-color:darkolivegreen;
+}
+
+#l3{
+    background-color:gold;
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: lawngreen;
+}
+
+#l4:hover{
+    font-size: 50px;
+}
+
