@@ -1,0 +1,30 @@
+h1{
+    font-family: Brush Script MT;
+    font-size: 40px;
+    color: darkblue;
+}
+p{
+    font-family: Helvetica;
+}
+ul{
+    font-family: Georgia;
+}
+ol{
+    font-family: impact;
+}
+.fish{
+    font-size: 25px;
+    line-height: 200%;
+    color: darkgreen;
+    background-color: hotpink;
+    letter-spacing: 20px;
+}
+#ginger{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    font-size: 40px;
+    line-height: 200%;
+}
+
+
+

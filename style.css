@@ -25,3 +25,10 @@ body {
     background: rgb(219, 211, 139);
     font-size: 30px;
 }
+
+#cookbook{
+    position: absolute;
+    left: 80px;
+    background: lightpink;
+    font-size: 25px;
+}
