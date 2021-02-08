@@ -1,0 +1,55 @@
+@font-face{
+	font-family:'Didot';
+	src:url(./fonts/Didot.woff)format('woff');
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a:link{
+    text-decoration: none;
+}
+h1{
+    position: relative;
+    font-family: Didot;
+    font-size: 50px;
+    padding: 25px;
+    margin: 20px auto;
+    background-color: beige;
+    text-align: center;
+    max-width: 70%;
+}
+h2{
+    position: relative;
+    font-family: Helvetica;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+ul{
+    position: relative;
+    font-family: Gill Sans;
+    padding: 50px;
+    margin: 40px;
+    background-color: khaki;
+    font-size: 18px;
+}
+.l1{
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(42, 77, 52);
+    background: chocolate;
+}
+.l2{
+    font-size: 40px;
+    letter-spacing: 13px;
+    background: darkred;
+    color: white;
+}
+.l3{
+    font-size: 15px;
+    letter-spacing: -1px;
+    background: yellowgreen;
+    color:royalblue;
+}
