@@ -14,6 +14,10 @@ function showline3(){
   document.getElementById('l8').className ='lines';
   document.getElementById('l9').className ='lines';
 }
+function showline4(){
+  document.getElementById('l10').className ='lines';
+  document.getElementById('l11').className ='lines';
+}
 
 function removeshake(){
   document.getElementById('test1').classList.remove('classname');
@@ -29,6 +33,9 @@ function glow2(){
 function glow3(){
   document.getElementById('test5').className = 'test-hover';
 }
+function glow4(){
+  document.getElementById('glow1').className = 'glow';
+}
 function removeglow1(){
 	document.getElementById('test3').classList.remove('test-hover');
 }
@@ -37,4 +44,7 @@ function removeglow2(){
 }
 function removeglow3(){
   document.getElementById('test5').classList.remove('test-hover');
+}
+function removeglow4(){
+  document.getElementById('glow1').classList.remove('glow');
 }

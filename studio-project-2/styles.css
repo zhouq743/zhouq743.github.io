@@ -48,6 +48,12 @@ a{
 .pentagon.smaller:hover{
   opacity: 0;;
 }
+#estrogen{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+  width: 318px;
+}
 #wrapper{
     position: relative;
     top: 136px;
@@ -194,6 +200,11 @@ a{
     z-index: -10;
     box-shadow: 0 0 100px 20px white;
 }
+.test-hover2{
+  width: 10px;
+  z-index: -10;
+  box-shadow: 0 0 100px 20px white;
+}
 
 #title{
   position: absolute;
@@ -328,6 +339,17 @@ a{
   left:0px;
   top: 55.4px ;
 }
+#l10{
+  transform: rotate(0deg);
+  width: 40px;
+  right:138px;
+  top: 21px ;
+}
+#l11{
+  transform: rotate(45deg);
+  right:67px;
+  top: 47px ;
+}
 
 
 .wrapper{
@@ -341,6 +363,27 @@ a{
   left: 15px;
 }
 .w2{
-  top: -257px;
-  left: 80px;
+  top: -312px;
+  left: 48px;
+}
+
+.wrapper-pentagon{
+  position: absolute;
+  -webkit-transform: scale(.9, .9);
+  -moz-transform: scale(.9, .9);
+  transform: scale(0.68, 0.68) rotate(19.4deg);
+}
+.w3{
+  top: 122px;
+  left: 197px;
+}
+
+.glow{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 140px;
+  left: 248px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 20px white;
 }

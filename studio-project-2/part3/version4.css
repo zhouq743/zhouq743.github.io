@@ -1,0 +1,80 @@
+body{
+    margin: 20px;
+    font-size: 30px;
+    font-family:sans-serif;
+    background: #FAD1D1;
+}
+
+h1{
+   color: white;
+   position: relative; 
+   font-size: 30px;
+   top: 10%;
+   padding: 40px;
+}
+h2{
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 23px;
+}
+#count{
+    width: 50px;
+    position: fixed;
+    border: white;
+    top: 5%;
+    right:10%;
+    height: 100px;
+    border: 3px white;
+}
+#text{
+}
+#main{
+    padding: 40px;
+    color: white;
+    position: relative;
+    width: 50%;
+    line-height: 45px;
+    text-align: justify;
+}
+span{
+    color: red;
+}
+span::before{
+    content: '-';
+    width: 5px;
+    position: relative;
+    letter-spacing: -1px;
+}
+span::after{
+    content: '-';
+    width: 5px;
+    position: relative;
+    letter-spacing: -1px;
+}
+span:hover{
+    animation-name: 'aatravel';
+    color: red;
+    text-transform: uppercase;
+    animation-fill-mode: both;
+}
+@keyframes travel{
+    from{opacity: 100;
+    font-size: 50px;}
+    to{font-size: 100px;}
+}
+@keyframes aatravel{
+    from{opacity: 100;
+    font-size: 50px;}
+    to{transform: translate(-200px,-400px);}
+}
+.tit{
+    font-size: 100px;
+}
+
+img{
+    position: fixed;
+    width: 40%;
+    right: 5%;
+    top: 20%;
+}

@@ -1,0 +1,59 @@
+body{
+    margin: 20px;
+    font-size: 30px;
+    font-family:sans-serif;
+    background: black;
+}
+
+h1{
+   color: white;
+   position: relative; 
+   font-size: 100px;
+   top: 10%;
+}
+h2{
+    position: relative;
+    color: white;
+}
+#count{
+    width: 50px;
+    position: fixed;
+    border: white;
+    top: 0;
+    right:10%;
+}
+#main{
+    color: white;
+    position: relative;
+    width: 50%;
+    margin:auto;
+    line-height: 70px;
+}
+span{
+    color: red;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+span::before{
+    content: '';
+    width: 5px;
+    position: relative;
+    letter-spacing: -1px;
+}
+span:hover{
+    animation-name: travel;
+    animation-fill-mode: both;
+}
+@keyframes travel{
+    from{opacity: 100;
+    font-size: 50px;}
+    to{font-size: 100px;}
+}
+
+img{
+    position: fixed;
+    width: 50%;
+    top: 40px;
+    opacity: 0.5;
+    left: 20%;
+}
