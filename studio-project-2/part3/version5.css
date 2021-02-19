@@ -95,3 +95,23 @@ img{
     right: 5%;
     top: 20%;
 }
+#wrapper{
+    position: fixed;
+    height: auto;
+    width: 40%;
+    right: 5%;
+    top: 20%;
+    height: 500px;
+    border: tomato;
+}
+    
+#es{
+    position: absolute;
+    color: white;
+        border-radius: 40px;
+        border: 2px solid red;
+    right: 5%;
+    top: 80%;
+    background: #FAD1D1;
+    padding: 5px;
+}

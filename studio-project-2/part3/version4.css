@@ -78,3 +78,20 @@ img{
     right: 5%;
     top: 20%;
 }
+
+#wrapper{
+    position: fixed;
+    height: auto;
+    width: 40%;
+    right: 5%;
+    top: 20%;
+    height: 500px;
+    border: tomato;
+}
+    
+#es{
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 80%;
+}

@@ -2,7 +2,7 @@ body{
     margin: 20px;
     font-size: 30px;
     font-family:sans-serif;
-    background: black;
+ background: black;
 }
 
 h1{
@@ -63,8 +63,24 @@ span:hover{
 }
 
 img{
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    top: 0%;
+}
+#wrapper{
     position: fixed;
+    height: auto;
     width: 40%;
     right: 5%;
     top: 20%;
+    height: 500px;
+    border: tomato;
+}
+    
+#es{
+    position: absolute;
+    color: white;
+    right: 5%;
+    top: 80%;
 }

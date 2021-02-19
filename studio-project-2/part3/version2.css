@@ -59,3 +59,10 @@ img{
     right: 5%;
     top: 20%;
 }
+
+#label{
+    position: fixed;
+    color: white;
+    top: 80%;
+    left: 80%;
+}
