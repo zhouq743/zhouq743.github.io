@@ -1,0 +1,695 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#title{
+    position: relative;
+    font-family: Lato;
+    font-size: 2vw;
+    padding-left:40px;
+    text-transform: uppercase;
+}
+#author{
+    position: relative;
+    font-family: Lato;
+    font-size: 2vw;
+    padding-left:40px;
+}
+#me{
+    font-family: Lato;
+    font-size: 2vw;
+    padding-left:40px;
+    width: 50%;
+    text-align: right;
+}
+#shape-wrapper{
+    position: fixed;
+    top: 5%;
+    left: 55%;
+    width: 45%;
+    padding-top: 40%;
+    box-sizing: border-box;
+    transform: scale(.9);
+}
+#label{
+    position: absolute;
+    font-family: Lato;
+    font-size: 2vw;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    padding: 0 1vw;
+    border-radius: 10px;
+}
+.h{
+    position: absolute;
+    font-family: Lato;
+    font-size: 2vw;
+    line-height: 0px;
+}
+.c{
+    position: absolute;
+    font-family: Lato;
+    font-size: 2vw;
+    line-height: 0px;
+}
+.o{
+    position: absolute;
+    font-family: Lato;
+    font-size: 2vw;
+    line-height: 0px;
+}
+hr{
+    position: absolute;
+    border-radius: 1px;
+    border-top: 0.06vw solid black;
+    width: 7%;
+}
+.line1{
+    position: absolute;
+    border-radius: 1px;
+    width: 7%;
+}
+.h1{
+    top: 50%;
+   left: 0;
+}
+.h2{
+    top: 100%;
+   left: 0;
+}
+.h3{
+    top: 100%;
+   left: 22.2%;
+}
+.h4{
+    top: 37.5%;
+   left: 22.2%;
+}
+.h5{
+    top: 25%;
+   left: 33.3%;
+}
+.h6{
+    top: 25%;
+   left: 44.4%;
+}
+.h7{
+    top: 62.5%;
+   left: 44.4%;
+}
+.h8{
+    top: 75%;
+   left: 44.4%;
+}
+.h9{
+    top: 100%;
+   left: 44.4%;
+}
+.h10{
+    top: -2%;
+    left: 55.6%;
+}
+.h11{
+    top:12.5%;
+    left: 55.6%;
+}
+.h12{
+    top:37.5%;
+    left: 55.6%;
+}
+.h13{
+    top:87.5%;
+    left: 55.6%;
+}
+.h14{
+    top:-2%;
+    left: 66.7%;
+}
+.h15{
+    top:62.5%;
+    left: 66.7%;
+}
+.h16{
+    top:75%;
+    left: 66.7%;
+}
+.h16{
+    top:-2%;
+    left: 77.8%;
+}
+.h17{
+    top:12.5%;
+    left: 77.8%;
+}
+.h18{
+    top:37.5%;
+    left: 77.8%;
+}
+.h19{
+    top:62.5%;
+    left: 77.8%;
+}
+.h20{
+    top:62.5%;
+    left: 88.9%;
+}
+.h21{
+    top:12.5%;
+    left: 100%;
+}
+.h22{
+    top:37.5%;
+    left: 100%;
+}
+.h23{
+    top:50%;
+    left: 100%;
+}
+.h24{
+    top: 75%;
+    left: 66.7%;
+}
+.c1{
+    top: 62.5%;
+    left: 11.1%;
+}
+.c2{
+    top: 75%;
+    left: 11.1%;
+}
+.c3{
+    top: 50%;
+    left: 22.2%;
+}
+.c4{
+    top: 87.5%;
+    left: 22.2%;
+}
+.c5{
+    top: 62.5%;
+    left: 33.3%;
+}
+.c6{
+    top: 75%;
+    left: 33.3%;
+}
+.c7{
+    top: 37.5%;
+    left: 44.4%;
+}
+.c8{
+    top: 50%;
+    left: 44.4%;
+}
+.c9{
+    top: 87.5%;
+    left: 44.4%;
+}
+.c10{
+    top: 25%;
+    left: 55.556%;
+}
+.c11{
+    top: 62.5%;
+    left: 55.556%;
+}
+.c12{
+    top: 75%;
+    left: 55.556%;
+}
+.c13{
+    top: 12.5%;
+    left: 66.667%;
+}
+.c14{
+    top: 37.5%;
+    left: 66.667%;
+}
+.c15{
+    top: 50%;
+    left: 66.667%;
+}
+.c16{
+    top: 25%;
+    left: 77.778%;
+}
+.c17{
+    top: 37.5%;
+    left: 88.889%;
+}
+.c18{
+    top: 50%;
+    left: 88.889%;
+}
+.o1{
+    top: 87.5%;
+}
+.o2{
+    top: 12.5%;
+    left: 88.889%;
+}
+.line1{
+    transform: rotate(90deg);
+    top: 8.4%;
+    left: 64.6%;
+}
+.line2{
+    transform: rotate(45deg);
+    width: 11.312%;
+    top: 8.4%;
+    left: 57.5%;
+}
+.line3{
+    transform: rotate(-45deg);
+    width: 11.312%;
+    top: 8.4%;
+    left: 69%;
+}
+.line4{
+    transform: rotate(90deg);
+    top: 21.5%;
+    left: 53.7%;
+}
+.line5{
+    transform: rotate(90deg);
+    width: 14%;
+    top: 27.5%;
+    left: 61.1%;
+}
+.line6{
+    transform: rotate(90deg);
+    top: 21.5%;
+    left: 75.9%;
+}
+.line7{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 22.4%;
+    left: 80.5%;
+}
+.line8{
+    top: 15.8%;
+    left: 92.5%;
+}
+.line9{
+    top: 28.3%;
+    left: 48%;
+}
+.line10{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 34.4%;
+    left: 57.5%;
+}
+.line11{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 34.4%;
+    left: 69%;
+}
+.line12{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 34.4%;
+    left: 35.4%;
+}
+.line13{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 34.4%;
+    left: 47%;
+}
+.line14{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 34.4%;
+    left: 80.5%;
+}
+.line15{
+    top: 40.7%;
+    left: 48%;
+}
+.line16{
+    top: 40.7%;
+    left: 92.5%;
+}
+.line17{
+    top: 40.7%;
+    left: 81.3%;
+}
+.line18{
+    transform: rotate(90deg);
+    top: 47%;
+    left: 20.15%;
+}
+.line19{
+    transform: rotate(90deg);
+    top: 47%;
+    left: 42.6%;
+}
+.line20{
+    transform: rotate(90deg);
+    top: 47%;
+    left: 64.6%;
+}
+.line21{
+    transform: rotate(90deg);
+    top: 47%;
+    left: 87%;
+}
+.line22{
+    width: 16%;
+    top: 53%;
+    left: 71%;
+}
+.line23{
+    top: 53%;
+    left: 92.5%;
+}
+.line24{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 2.5%;
+}
+.line25{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 59.5%;
+    left: 24.5%;
+}
+.line26{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 60.2%;
+    left: 23.5%;
+}
+.line27{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 46.5%;
+}
+.line28{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 68.5%;
+}
+.line29{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 13.2%;
+}
+.line30{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 35.2%;
+}
+.line31{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 59.2%;
+    left: 57.5%;
+}
+.line32{
+    transform: rotate(90deg);
+    top: 59.6%;
+    left: 42.6%;
+}
+.line33{
+    transform: rotate(90deg);
+    top: 59.6%;
+    left: 87%;
+}
+.line34{
+    top: 66%;
+    left: 59%;
+}
+.line35{
+    transform: rotate(90deg);
+    top: 72.5%;
+    left: 8.65%;
+}
+.line36{
+    transform: rotate(90deg);
+    top: 72.5%;
+    left: 9.55%;
+}
+.line37{
+    transform: rotate(90deg);
+    top: 72.5%;
+    left: 31.55%;
+}
+.line38{
+    transform: rotate(90deg);
+    top: 72.5%;
+    left: 53.55%;
+}
+.line39{
+    top: 78.3%;
+    left: 48%;
+}
+.line40{
+    top: 78.3%;
+    left: 59%;
+}
+.line41{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 85.2%;
+    left:2.5%;
+}
+.line42{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 85.2%;
+    left:24.5%;
+}
+.line43{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 86%;
+    left:25.7%;
+}
+.line44{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 85.2%;
+    left:47%;
+}
+.line45{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 85.2%;
+    left: 13.2%;
+}
+.line46{
+    transform: rotate(45deg);
+    width: 9.898%;
+    top: 85.2%;
+    left: 35.2%;
+}
+.line47{
+    transform: rotate(90deg);
+    top: 97.5%;
+    left: -2%;
+}
+.line48{
+    transform: rotate(90deg);
+    top: 97.5%;
+    left: 20.15%;
+}
+.line49{
+    transform: rotate(90deg);
+    top: 97.5%;
+    left: 42.6%;
+}
+.line50{
+    top: 90.6%;
+    left: 48%;
+}
+
+#main{
+    font-size: 2vw;
+    font-family: Lato;
+    padding: 40px;
+    position: relative;
+    width: 50%;
+    line-height: 3.5vw;
+
+}
+span{
+    color: red;
+}
+span::before{
+    content: '-';
+    width: 5px;
+    position: relative;
+    letter-spacing: -1px;
+}
+span::after{
+    content: '-';
+    width: 5px;
+    position: relative;
+    letter-spacing: -1px;
+}
+
+@media screen and (max-width:1024px){
+    hr{
+        transform: translate(-0vw,-0.4vw);
+        width: 6.75%;
+    }
+    .diag{
+        width: 9.55%;
+    }
+    .ver{
+        width: 6.75%;
+        transform: translate(-0.1vw, -0.3vw) rotate(90deg);
+    }
+    .line5{
+        width: 13.5%;
+    }
+    .right{
+        transform: translate(0.2vw, -0.5vw) rotate(45deg);
+    }
+    .left{
+        transform: translate(0.2vw, -0.5vw) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width:768px){
+    #shape-wrapper{
+        position: relative;
+        width: 80%;
+        padding-top: 72%;
+        transform: scale(1);
+        left: 10%;
+        box-sizing: border-box;
+        top: 5vw;
+    }
+    .h{
+        font-size: 4vw;
+    }
+    .c{
+        font-size: 4vw;
+    }
+    .o{
+        font-size: 4vw;
+    }
+    hr{
+        position: absolute;
+        border-top: 0.03px solid black;
+        transform: translate(0.5vw, 0.5vw);
+        width: 6.5%;
+    }
+    .diag{
+        width: 9.2%;
+    }
+    .ver{
+        width: 6.5%;
+        transform: translate(0.4vw, 0.3vw) rotate(90deg);
+    }
+    .line5{
+        width: 13%;
+    }
+    .right{
+        transform: translate(0.5vw, -0.2vw) rotate(45deg);
+    }
+    .left{
+        transform: translate(0.4vw, -0.2vw) rotate(-45deg);
+    }
+    #label{
+        font-size: 4vw;
+        left: 0%;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    #main{
+        padding-top: 15vw;
+        font-size: 4vw;
+        line-height: 7vw;
+        width: 88%;
+    }
+    #title{
+        font-size: 4vw;
+    }
+    #author{
+        font-size: 4vw;
+    }
+    #me{
+        width: 88%;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:480px){
+    #shape-wrapper{
+        position: relative;
+        width: 80%;
+        padding-top: 72%;
+        transform: scale(1);
+        left: 10%;
+        box-sizing: border-box;
+        top: 10vw;
+    }
+    .h{
+        font-size: 4vw;
+    }
+    .c{
+        font-size: 4vw;
+    }
+    .o{
+        font-size: 4vw;
+    }
+    hr{
+        position: absolute;
+        border-top: 0.03px solid black;
+        transform: translate(0.1vw, -0.5vw);
+        width: 6%;
+    }
+    .diag{
+        width: 8.5%;
+    }
+    .ver{
+        width: 6%;
+        transform: translate(0.25vw, -0.5vw) rotate(90deg);
+    }
+    .line5{
+        width: 14%;
+    }
+    .right{
+        transform: translate(0.5vw, -0.5vw) rotate(45deg);
+    }
+    .left{
+        transform: translate(0.5vw, -0.5vw) rotate(-45deg);
+    }
+    #label{
+        font-size: 4vw;
+        left: 0%;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    #main{
+        padding-top: 20vw;
+        font-size: 4vw;
+        line-height: 7vw;
+        width: 80%;
+    }
+    #title{
+        font-size: 4vw;
+    }
+    #author{
+        font-size: 4vw;
+    }
+    #me{
+        width: 80%;
+        font-size: 4vw;
+    }
+}
