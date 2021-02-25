@@ -30,7 +30,7 @@ a{
 #shape-wrapper{
     position: fixed;
     top: 5%;
-    left: 55%;
+    left: 53%;
     width: 45%;
     padding-top: 40%;
     box-sizing: border-box;
@@ -39,13 +39,12 @@ a{
 #label{
     position: absolute;
     font-family: Lato;
-    font-size: 2vw;
+    font-size: 1.5vw;
     bottom: -4vw;
     right: 0;
     border: 1px solid #d02718;
-    box-shadow: 4px 5px 7px 0px #8a2a21;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-    padding: 0 1vw;
+    padding: 0 0.5vw;
     border-radius: 0 3vw 3vw 3vw;
 }
 .all{
@@ -55,13 +54,27 @@ a{
     font-family: Lato;
     text-align: center;
 }
-
+#return{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5vw;
+    font-family: Lato;
+    border-radius: 0 1vw 1vw 1vw;
+    margin: 0.1vw;
+    text-shadow:0px 0px 0px #810e05;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+    border:1px solid #d02718;
+	display:inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 .i{
     padding: 5px;
     border-radius: 0 1vw 1vw 1vw;
     margin: 0.1vw;
     text-shadow:0px 0px 0px #810e05;
-    box-shadow: 3px 4px 5px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
     border:1px solid #d02718;
@@ -71,12 +84,10 @@ a{
 }
 .smaller{
     font-size: 1.5vw;
+    padding: 11px;
+    padding-bottom: 9px;
 }
-.i:hover {
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#f24437;
-    font-size: 1.8vw;
-}
+
 .i:active {
 	position:relative;
 	top:1px;
@@ -586,6 +597,11 @@ hr{
         transform: translate(-0vw,-0.4vw);
         width: 6.75%;
     }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 9px;
+        padding-bottom: 7px;
+    }
     .diag{
         width: 9.55%;
     }
@@ -626,6 +642,16 @@ hr{
     .o{
         font-size: 4vw;
     }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 8px;
+        padding-bottom: 6.5px;
+    }
+    #return{
+        font-size: 2vw;
+        padding: 10px;
+        padding-bottom: 8.5px;
+    }
     hr{
         position: absolute;
         border-top: 0.03px solid black;
@@ -649,7 +675,7 @@ hr{
         transform: translate(0.4vw, -0.2vw) rotate(-45deg);
     }
     #label{
-        font-size: 4vw;
+        font-size: 3vw;
         bottom: -6vw;
     }
     #main{
@@ -679,6 +705,16 @@ hr{
         left: 10%;
         box-sizing: border-box;
         top: 10vw;
+    }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 7px;
+        padding-bottom: 6px;
+    }
+    #return{
+        font-size: 2vw;
+        padding: 6px;
+        padding-bottom: 7px;
     }
     .all{
         transform: scale(1.2);
@@ -715,7 +751,7 @@ hr{
         transform: translate(0.5vw, -0.5vw) rotate(-45deg);
     }
     #label{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #main{
         padding-top: 20vw;

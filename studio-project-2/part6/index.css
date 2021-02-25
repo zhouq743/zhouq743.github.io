@@ -1,0 +1,142 @@
+
+body{
+    font-family: Lato;
+    font-size: 3vw;
+}
+a{
+    text-decoration: none;
+}
+.hexagon {
+    position: relative;
+    width: 200px; 
+    height: 115.47px;
+    background-color: #000000;
+    margin: 57.74px 0;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #000000;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #000000;
+  }
+  .pentagon{ 
+    position: relative; 
+    height: 0; 
+    width: 180px; 
+    border-top: 180px solid black; 
+    border-left: 90px solid transparent; 
+    border-right: 90px solid transparent;  
+  } 
+  
+  .pentagon:after{ 
+    position: absolute; 
+    content: ''; 
+    border-bottom: 180px solid black; 
+    border-left: 180px solid transparent; 
+    border-right: 180px solid transparent; 
+    bottom: 180px; 
+    left: -90px; 
+  } 
+
+
+.label{
+    position: absolute;
+    padding: 10px;
+    font-size: 35px;
+    border-radius: 0 1vw 1vw 1vw;
+    text-shadow:0px 0px 0px #810e05;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+    border:1px solid #d02718;
+	display:inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    bottom: -7vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box{
+    position: relative;
+    height: 400px;
+    flex-basis: 480px;
+    margin: auto;
+}
+.redd{
+    background: red;
+}
+.redd::before{
+    border-bottom: 57.74px solid red;
+}
+.redd::after{
+    border-top: 57.74px solid red;
+}
+.reddd{
+    border-top: 180px solid red; 
+}
+.reddd::after{
+    border-bottom: 180px solid red; 
+}
+#container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper{
+    position: relative;
+    -webkit-transform: scale(.6, .6);
+    -moz-transform: scale(.6, .6);
+    transform: scale(0.6, 0.6);
+}
+.w1{
+    position: absolute;
+    bottom:0 ;
+}
+.w2{
+    position: absolute;
+    left: 119px;
+    bottom:0px;
+}
+.w3{
+    position: absolute;
+    left: 178px;
+    top: 66px;
+}
+.w4{
+    transform: scale(0.344) rotate(26.4deg);
+    left: 158px;
+    top: 121px;
+}
+.w5{
+    position: absolute;
+    bottom:0 ;
+}
+.w6{
+    position: absolute;
+    left: 120px;
+    bottom:0px;
+}
+.w7{
+    position: absolute;
+    left: 180px;
+    top: 66px;
+}
+.w8{
+    transform: scale(0.344) rotate(26.4deg);
+    left: 159px;
+    top: 121px;
+}

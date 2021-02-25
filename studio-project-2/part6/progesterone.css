@@ -2,12 +2,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(247, 212, 220);
+    background-color: black;
 }
 a{
     text-decoration: none;
 }
 #title{
+    color: white;
     position: relative;
     font-family: Lato;
     font-size: 2vw;
@@ -15,12 +16,14 @@ a{
     text-transform: uppercase;
 }
 #author{
+    color: white;
     position: relative;
     font-family: Lato;
     font-size: 2vw;
     padding-left:40px;
 }
 #me{
+    color: white;
     font-family: Lato;
     font-size: 2vw;
     padding-left:40px;
@@ -28,9 +31,10 @@ a{
     text-align: right;
 }
 #shape-wrapper{
+    color: white;
     position: fixed;
     top: 5%;
-    left: 55%;
+    left: 53%;
     width: 45%;
     padding-top: 40%;
     box-sizing: border-box;
@@ -39,13 +43,12 @@ a{
 #label{
     position: absolute;
     font-family: Lato;
-    font-size: 2vw;
+    font-size: 1.5vw;
     bottom: -4vw;
     right: 0;
     border: 1px solid #d02718;
-    box-shadow: 4px 5px 7px 0px #8a2a21;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-    padding: 0 1vw;
+    padding: 0 0.5vw;
     border-radius: 0 3vw 3vw 3vw;
 }
 .all{
@@ -55,13 +58,27 @@ a{
     font-family: Lato;
     text-align: center;
 }
-
+#return{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    font-size: 1.5vw;
+    font-family: Lato;
+    border-radius: 0 1vw 1vw 1vw;
+    margin: 0.1vw;
+    text-shadow:0px 0px 0px #810e05;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+    border:1px solid #d02718;
+	display:inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 .i{
     padding: 5px;
     border-radius: 0 1vw 1vw 1vw;
     margin: 0.1vw;
     text-shadow:0px 0px 0px #810e05;
-    box-shadow: 3px 4px 5px 0px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
     border:1px solid #d02718;
@@ -71,12 +88,10 @@ a{
 }
 .smaller{
     font-size: 1.5vw;
+    padding: 11px;
+    padding-bottom: 9px;
 }
-.i:hover {
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#f24437;
-    font-size: 1.8vw;
-}
+
 .i:active {
 	position:relative;
 	top:1px;
@@ -119,8 +134,8 @@ hr{
    left: 0;
 }
 .h2{
-    top: 100%;
-   left: 0;
+    top: 25%;
+   left: 100%;
 }
 .h3{
     top: 100%;
@@ -183,8 +198,8 @@ hr{
     left: 77.8%;
 }
 .h17{
-    top:12.5%;
-    left: 77.8%;
+    top:-2%;
+    left: 100%;
 }
 .h18{
     top:37.5%;
@@ -199,8 +214,8 @@ hr{
     left: 88.9%;
 }
 .h21{
-    top:12.5%;
-    left: 100%;
+    top:-2%;
+    left: 88.889%;
 }
 .h22{
     top:37.5%;
@@ -214,6 +229,30 @@ hr{
     top: 75%;
     left: 66.7%;
 }
+.h25{
+   top: 62.5%;
+   left: 0; 
+}
+.h26{
+    top: 50%;
+    left: 11.111%; 
+ }
+.h27{
+    top: 62.5%;
+    left: 22.222%; 
+ }
+.h28{
+    top: 25%;
+    left: 22.222%; 
+}
+.h29{
+    top: 50%;
+    left: 55.5556%; 
+ }
+ .h30{
+    top: 25%;
+    left: 88.889%; 
+ }
 .c1{
     top: 62.5%;
     left: 11.1%;
@@ -286,12 +325,24 @@ hr{
     top: 50%;
     left: 88.889%;
 }
+.c19{
+    top: 37.5%;
+    left: 33.333%;
+}
+.c20{
+    top: 12.5%;
+    left: 88.889%;
+}
+.c21{
+    top: 12.5%;
+    left: 100%;
+}
 .o1{
     top: 87.5%;
 }
 .o2{
     top: 12.5%;
-    left: 88.889%;
+    left: 77.778%;
 }
 .line1{
     transform: rotate(90deg);
@@ -324,7 +375,7 @@ hr{
 .line6{
     transform: rotate(90deg);
     top: 21.5%;
-    left: 75.9%;
+    left: 97.9%;
 }
 .line7{
     transform: rotate(-45deg);
@@ -356,7 +407,7 @@ hr{
     transform: rotate(45deg);
     width: 9.898%;
     top: 34.4%;
-    left: 35.4%;
+    left: 24.5%;
 }
 .line13{
     transform: rotate(-45deg);
@@ -384,8 +435,8 @@ hr{
 }
 .line18{
     transform: rotate(90deg);
-    top: 47%;
-    left: 20.15%;
+    top: 34%;
+    left: 31.55%;
 }
 .line19{
     transform: rotate(90deg);
@@ -426,8 +477,8 @@ hr{
 .line26{
     transform: rotate(45deg);
     width: 9.898%;
-    top: 60.2%;
-    left: 23.5%;
+    top: 47.2%;
+    left: 46.5%;
 }
 .line27{
     transform: rotate(45deg);
@@ -480,8 +531,8 @@ hr{
 }
 .line36{
     transform: rotate(90deg);
-    top: 72.5%;
-    left: 9.55%;
+    top: 59.6%;
+    left: 20.15%;
 }
 .line37{
     transform: rotate(90deg);
@@ -538,9 +589,10 @@ hr{
     left: 35.2%;
 }
 .line47{
+    width: 14%;
     transform: rotate(90deg);
-    top: 97.5%;
-    left: -2%;
+    top: 53%;
+    left: 27.55%;
 }
 .line48{
     transform: rotate(90deg);
@@ -556,8 +608,50 @@ hr{
     top: 90.6%;
     left: 48%;
 }
+.line51{
+    top: 53%;
+    left: 14.5%;
+}
+.line52{
+    top: 66%;
+    left: 3.5%;
+}
+.line53{
+    top: 40.7%;
+    left: 25.7%;
+}
+.line54{
+    top: 15%;
+    left: 81.5%;
+}
+.line55{
+    top: 16.2%;
+    left: 81.5%;
+}
+.line56{
+    top: 28.3%;
+    left: 81.3%;
+}
+.line57{
+    transform: rotate(90deg);
+    top: 8.4%;
+    left: 97.9%;
+}
+.line58{
+    transform: rotate(45deg);
+    width: 11.312%;
+    top: 8.4%;
+    left: 90.5%;
+}
+.line59{
+    transform: rotate(-45deg);
+    width: 9.898%;
+    top: 84%;
+    left:1.7%;
+}
 
 #main{
+    color: white;
     font-size: 2vw;
     font-family: Lato;
     padding: 40px;
@@ -586,6 +680,11 @@ hr{
         transform: translate(-0vw,-0.4vw);
         width: 6.75%;
     }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 9px;
+        padding-bottom: 7px;
+    }
     .diag{
         width: 9.55%;
     }
@@ -593,7 +692,7 @@ hr{
         width: 6.75%;
         transform: translate(-0.1vw, -0.3vw) rotate(90deg);
     }
-    .line5{
+    .line5, .line47{
         width: 13.5%;
     }
     .right{
@@ -626,6 +725,16 @@ hr{
     .o{
         font-size: 4vw;
     }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 8px;
+        padding-bottom: 6.5px;
+    }
+    #return{
+        font-size: 2vw;
+        padding: 10px;
+        padding-bottom: 8.5px;
+    }
     hr{
         position: absolute;
         border-top: 0.03px solid black;
@@ -639,7 +748,7 @@ hr{
         width: 6.5%;
         transform: translate(0.4vw, 0.3vw) rotate(90deg);
     }
-    .line5{
+    .line5, .line47{
         width: 13%;
     }
     .right{
@@ -649,7 +758,7 @@ hr{
         transform: translate(0.4vw, -0.2vw) rotate(-45deg);
     }
     #label{
-        font-size: 4vw;
+        font-size: 3vw;
         bottom: -6vw;
     }
     #main{
@@ -680,6 +789,16 @@ hr{
         box-sizing: border-box;
         top: 10vw;
     }
+    .smaller{
+        font-size: 1.5vw;
+        padding: 7px;
+        padding-bottom: 6px;
+    }
+    #return{
+        font-size: 2vw;
+        padding: 6px;
+        padding-bottom: 7px;
+    }
     .all{
         transform: scale(1.2);
     }
@@ -705,7 +824,7 @@ hr{
         width: 6%;
         transform: translate(0.25vw, -0.5vw) rotate(90deg);
     }
-    .line5{
+    .line5, .line47{
         width: 14%;
     }
     .right{
@@ -715,7 +834,7 @@ hr{
         transform: translate(0.5vw, -0.5vw) rotate(-45deg);
     }
     #label{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #main{
         padding-top: 20vw;
