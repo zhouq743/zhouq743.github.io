@@ -1,0 +1,8 @@
+div{
+    background-color: beige;
+    width: 40vw;
+    font-size: 1.5vw;
+}
+div:hover{
+    background-color: lightblue;
+}
