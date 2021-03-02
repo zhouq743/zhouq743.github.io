@@ -1,4 +1,7 @@
-
+@font-face{
+	font-family:'Lato';
+	src:url(./Lato.woff)format('woff');
+}
 body{
     margin: 0;
     padding: 0;
