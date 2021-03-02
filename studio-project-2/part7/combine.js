@@ -74,6 +74,7 @@ function swtch2(){
 function turntos(){
     document.getElementById('shape-wrapper').classList.remove('noshow');
     document.getElementById('container').style.display = 'none';
+    document.getElementById('main').classList.remove('goup');
 }
 function turntopr(){
     document.body.style.backgroundColor = 'black';
@@ -84,4 +85,5 @@ function turntopr(){
     document.getElementById('shape-wrapper2').style.color = 'white';
     document.getElementById('shape-wrapper2').classList.remove('noshow');
     document.getElementById('container').style.display = 'none';
+    document.getElementById('main').classList.remove('goup');
 }
