@@ -1579,7 +1579,7 @@ hr{
     #container{
         position: relative;
         left: 10%;
-        padding-bottom: 10vw;
+        padding-bottom: 5vw;
     }
     .box{
         transform: scale(1.2);
@@ -1691,18 +1691,14 @@ hr{
         font-size: 4vw;
         top: -200px;
     }
-    .goup{
-        padding-top: 0;
-        top: -100px;
-    }
 }
 
 @media screen and (max-width:556px){
     #container{
         position: relative;
         left: 5%;
-        padding-bottom: 10vw;
-        top: -10vw;
+        padding-bottom: 0;
+        top: -4vw;
     }
     .box{
         transform: scale(1);
@@ -1733,7 +1729,7 @@ hr{
         transform: scale(.8);
     }
     .box2{
-        top: -90px;
+        top: -120px;
     }
     .label1 p{
         -webkit-transform: translate(-25vw, -200px);
