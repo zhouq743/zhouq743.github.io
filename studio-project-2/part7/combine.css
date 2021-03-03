@@ -1684,7 +1684,7 @@ hr{
     #me{
         width: 88%;
         font-size: 4vw;
-        top: -200px;
+        top: 0px;
     }
 }
 
@@ -1826,7 +1826,5 @@ hr{
         padding-top: 0;
         top: -350px;
     }
-    #me{
-        top: -400px;
-    }
+
 }
