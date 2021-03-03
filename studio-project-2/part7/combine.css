@@ -1807,6 +1807,7 @@ hr{
     }
     #main{
         padding-top: 20vw;
+        padding-left: 20px;
         font-size: 4vw;
         line-height: 7vw;
         width: 95%;
