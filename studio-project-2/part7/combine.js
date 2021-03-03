@@ -1,3 +1,6 @@
+
+
+
 function redc(){
     document.querySelectorAll('.cs').forEach(item => {
         item.classList.add('test');
@@ -75,6 +78,8 @@ function turntos(){
     document.getElementById('shape-wrapper').classList.remove('noshow');
     document.getElementById('container').style.display = 'none';
     document.getElementById('main').classList.remove('goup');
+    document.getElementById('main').classList.remove('noshow');
+    document.getElementById('me').classList.remove('noshow');
 }
 function turntopr(){
     document.body.style.backgroundColor = 'black';
@@ -86,4 +91,6 @@ function turntopr(){
     document.getElementById('shape-wrapper2').classList.remove('noshow');
     document.getElementById('container').style.display = 'none';
     document.getElementById('main').classList.remove('goup');
+    document.getElementById('main').classList.remove('noshow');
+    document.getElementById('me').classList.remove('noshow');
 }

@@ -102,11 +102,20 @@ a{
     cursor: pointer;
 }
 
-.box{
-    position: relative;
+.box1{
+    position: absolute;
     width: 40vw;
-    flex-basis: 400px;
+    left: 0;
+    height: 400px;
     transform: scale(1.2) translateX(3vw);
+}
+.box2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1.2) translateX(3vw);
+    width: 40vw;
+    height: 400px;
 }
 .redd{
     background: red;
@@ -125,13 +134,9 @@ a{
 }
 #container{
     position: fixed;
-    width: 40vw;
-    left: 55vw;
-    top: 0vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
+    width: 90vw;
+    left: 5vw;
+    top: 20vw;
 }
 .triangle1{
     width: 0;
@@ -1510,12 +1515,13 @@ hr{
 }
 
 @media screen and (max-width:1200px){
-    .box{
+    .box1,.box2{
     transform: scale(1) translateX(-3vw);    
     }
+    
     .label p{
         font-size: 1.92vw;
-        right:-6vw;
+        right:-3vw;
     }
 }
 
@@ -1552,11 +1558,11 @@ hr{
 }
 
 @media screen and (max-width:920px){
-    .box{
-    transform: scale(.9) translateX(-6vw);    
+    .box1{
+    transform: scale(1) translateX(-6vw) translateY(20vw) translateX(10vw);    
     }
     .box2{
-        transform: translateY(-100px) scale(.9) translateX(-6vw);
+        transform: translateY(-20vw) scale(1) translateX(-15vw);
     }
     .label p{
         font-size: 3w;
@@ -1564,35 +1570,24 @@ hr{
     }
 }
 @media screen and (max-width:833px){
-    .box{
-    transform: scale(.8) translateX(-8vw);    
-    }
-    .box2{
-        transform: translateY(-100px) scale(.8) translateX(-8vw);
-    }
     .label p{
         font-size: 3.8w;
         right:-12vw;
     }
 }
 @media screen and (max-width:768px){
-    #container{
-        position: relative;
-        left: 10%;
-        padding-bottom: 5vw;
-    }
-    .box{
-        transform: scale(1.2);
-    }
-    .box2{
-        top: 10vw;
-    }
+    .box1{
+        transform: scale(1) translateX(-6vw) translateY(30vw) translateX(20vw);    
+        }
+        .box2{
+            transform: translateY(-10vw) scale(1) translateX(-30vw);
+        }
     .label1 p{
-        -webkit-transform: translate(-35vw, -200px);
+        transform: translate(-35vw, -200px);
         font-size: 3vw;
     }
     .label2 p{
-        -webkit-transform: translateY(100px) translateZ(20px) translateX(-10vw);
+        transform: translateY(100px) translateZ(20px) translateX(-10vw);
         position: relative;
         font-size: 3vw;
     }
@@ -1693,18 +1688,17 @@ hr{
     }
 }
 
-@media screen and (max-width:556px){
+@media screen and (max-width:600px){
     #container{
         position: relative;
-        left: 5%;
         padding-bottom: 0;
-        top: -4vw;
+        top: 10vw;
     }
-    .box{
-        transform: scale(1);
-    }
+    .box1{
+        transform: scale(1) translateX(-6vw) translateY(40vw) translateX(10vw);    
+        }
     .box2{
-        top: -10vw;
+        transform: translateY(-20vw) scale(1) translateX(-45vw);
     }
     .label1 p{
         -webkit-transform: translate(-35vw, -200px);
@@ -1720,16 +1714,11 @@ hr{
     }
 }
 @media screen and (max-width:480px){
-    #container{
-        position: relative;
-        left: 10%;
-        transform: translateY(-20vw);
-    }
-    .box{
-        transform: scale(.8);
-    }
+    .box1{
+        transform: scale(1) translateX(-6vw) translateY(60vw) translateX(10vw);    
+        }
     .box2{
-        top: -120px;
+        transform: translateY(-20vw) scale(1) translateX(-45vw);
     }
     .label1 p{
         -webkit-transform: translate(-25vw, -200px);
