@@ -1814,9 +1814,11 @@ hr{
     #title{
         font-size: 5vw;
         width: 100%;
+        padding-left: 20px;
     }
     #author{
-        font-size: vw;
+        font-size: 5vw;
+        padding-left: 20px;
     }
     #me{
         width: 95%;
