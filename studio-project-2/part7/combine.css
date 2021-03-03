@@ -1715,17 +1715,17 @@ hr{
 }
 @media screen and (max-width:480px){
     .box1{
-        transform: scale(1) translateX(-6vw) translateY(60vw) translateX(10vw);    
+        transform: scale(.9) translateX(-6vw) translateY(60vw) translateX(10vw);    
         }
     .box2{
-        transform: translateY(-20vw) scale(1) translateX(-45vw);
+        transform: translateY(-20vw) scale(.9) translateX(-45vw);
     }
     .label1 p{
-        -webkit-transform: translate(-25vw, -200px);
+        transform: translate(-25vw, -200px);
         font-size: 5vw;
     }
     .label2 p{
-        -webkit-transform: translateY(100px) translateZ(20px) translateX(-10vw);
+        transform: translateY(100px) translateZ(20px) translateX(-10vw);
         position: relative;
         font-size: 5vw;
     }
