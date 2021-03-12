@@ -1,0 +1,24 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    transform: translate(0px,50px);
+  }
+  
+li {
+    list-style-type: none;
+    height: 40vh;
+    flex-grow: 3;
+  }
+  
+  
+img {
+    max-height: 80%;
+    min-width: 80%;
+    object-fit:contain;
+    vertical-align: bottom;
+  }
+
+select{
+    transform: scale(2) translate(50px,30px);
+}
