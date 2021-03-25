@@ -5,21 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>case</title>
 	<link rel="stylesheet" href="./styles/common.css">
+  <script src="./main.js" defer></script>
 </head>
 <body>
     <h1>What's inside a Computer Case</h1>
     <div id='container3'>
+      <div id='hoverr'>hover me!</div>
         <div class='items3'>
             <p>A computer case, also known as a computer chassis, tower, system unit, or cabinet, is the enclosure that contains most of the components of a personal computer (usually excluding the display, keyboard, and mouse).</p>
             <p>Cases are usually constructed from steel (often SECC—steel, electrogalvanized, cold-rolled, coil), aluminium and plastic. Other materials such as glass, wood, acrylic and even Lego bricks have appeared in home-built cases.</p>
             <p>From wikipedia</p>
         </div>
-        <img src="./sources/case-data.svg">
+        <div id='button'>show image</div>
+        <img class = 'noshow' src="./sources/case-data.svg">
     </div>
 
     <div id="container1">
         <h3>
-          What's inside the big box?
+          What's inside the big <span id='test1'>box</span>?
         </h3>
         <ul>
           <li>Fans</li>
@@ -27,18 +30,20 @@
           <li>Cabels</li>
           <li>Cabels</li>
           <li>Cabels</li>
-          <li><a href="./power.html">Power</a></li>
-          <li><a href="./motherboard.html">Motherboard</a></li>
+          <li class='test'><a href="./power.html">Power</a></li>
+          <li class='test'><a href="./motherboard.html">Motherboard</a></li>
           <li>LED lights</li>
         </ul>
       </div>
 
     <div id='container2'>
         <h3>Functions</h3>
-        <ul>
-            <li>Hold other components</li>
-            <li>Cool it down</li>
-            <li>Look good in your room</li>
+        <ul class="slideshow-container">
+            <li class='test2 mySlides fade'>Hold other components</li>
+            <li class='test2 mySlides fade'>Cool it down</li>
+            <li class='test2 mySlides fade'>Look good in your room</li>
+            <a id="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
         </ul>
     </div>
 </body>

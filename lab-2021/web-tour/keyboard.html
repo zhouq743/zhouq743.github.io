@@ -5,20 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Keyboard</title>
 	<link rel="stylesheet" href="./styles/common.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
 	<h1>Keyboard -  tell the computer what to do</h1>
     <div id="container3">
+        <div id='hoverr'>hover me!</div>
         <div class="items3">
             <p>A computer keyboard is a typewriter-style device[1] which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches. Replacing early punched cards and paper tape technology, interaction via teleprinter-style keyboards have been the main input method for computers since the 1970s, supplemented by the computer mouse since the 1980s.</p>
             <p>Keyboard keys (buttons) typically have a set of characters engraved or printed on them, and each press of a key typically corresponds to a single written symbol. However, producing some symbols may require pressing and holding several keys simultaneously or in sequence.[2] While most keyboard keys produce letters, numbers or symbols (characters), other keys or simultaneous key presses can prompt the computer to execute system commands, such as such as the Control-Alt-Delete combination used with Microsoft Windows.[3][4] In a modern computer, the interpretation of key presses is generally left to the software: the information sent to the computer, the scan code, tells it only which key (or keys) on which row and column, was pressed or released.</p>
             <p>From wikipedia</p>
         </div>
-        <img src="./sources/keyboard.svg">
+        <div id='button'>show image</div>
+        <img class = 'noshow' src="./sources/keyboard.svg">
     </div>
 
     <div id='container1'>
-        <h3>Sections on a keyboard</h3>
+        <h3>Sections on a <span id='test1'>keyboard</span></h3>
         <ul>
             <li>function key</li>
             <li>control key</li>
@@ -30,10 +33,12 @@
     </div>
     <div id='container2'>
         <h3>Functions</h3>
-        <ul>
-            <li>input information by typing things</li>
-			<li>LED lights make it FANCY</li>
-            <li>switches make typing better experience</li>
+        <ul class="slideshow-container">
+            <li class='test2 mySlides fade'>input information by typing things</li>
+			<li class='test2 mySlides fade'>LED lights make it FANCY</li>
+            <li class='test2 mySlides fade'>switches make typing better experience</li>
+            <a id="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
         </ul>
     </div>
 </body>

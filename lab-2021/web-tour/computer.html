@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computer</title>
     <link rel="stylesheet" href="./styles/common.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <h1>Desktop computer</h1>
     <div id="container3">
+      <div id='hoverr'>hover me!</div>
       <div class="items3">
         <p>
           A desktop computer is a personal computer designed for regular use at
@@ -25,35 +27,39 @@
         </p>
         <p>From wikipedia</p>
       </div>
-      <img
-        src="./sources/pc.svg"
-      />
+      <div id='button'>show image</div>
+      <img class = 'noshow' src="./sources/pc.svg">
     </div>
 
     <div id="container1">
-      <h3>If you want to build your own computer</h3>
+      <h3>If you want to build your own <span id='test1'>computer</span></h3>
       <ul>
-        <li><a href="./case.html">computer case</a></li>
-        <li><a href="./motherboard.html">motherboard</a></li>
-        <li><a href="./cpu.html">CPU</a></li>
-        <li><a href="./gpu.html">GPU</a></li>
-        <li><a href="./ssd.html">hard drive</a></li>
-        <li><a href="./memory.html">memory</a></li>
-        <li><a href="./power.html">power</a></li>
+        <li class='test'><a href="./case.html">computer case</a></li>
+        <li class='test'><a href="./motherboard.html">motherboard</a></li>
+        <li class='test'><a href="./cpu.html">CPU</a></li>
+        <li class='test'><a href="./gpu.html">GPU</a></li>
+        <li class='test'><a href="./ssd.html">hard drive</a></li>
+        <li class='test'><a href="./memory.html">memory</a></li>
+        <li class='test'><a href="./power.html">power</a></li>
       </ul>
     </div>
     <div id="container2">
       <h3>But if you are too lazy to build one yourself</h3>
-      <ul>
-        <li>Acer</li>
-        <li>Asus</li>
-        <li>Samsung</li>
-        <li>HP</li>
-        <li>Dell</li>
+      <ul class="slideshow-container">
+        <li class='test2 mySlides fade'>Acer</li>
+        <li class='test2 mySlides fade'>Asus</li>
+        <li class='test2 mySlides fade'>Samsung</li>
+        <li class='test2 mySlides fade'>HP</li>
+        <li class='test2 mySlides fade'>Dell</li>
+        <a id="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
       </ul>
+
       <p>
         Choose one from above never goes wrong!
       </p>
     </div>
+
+
   </body>
 </html>

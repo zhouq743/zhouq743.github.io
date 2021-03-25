@@ -5,20 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Monitor</title>
 	<link rel="stylesheet" href="./styles/common.css">
+	<script src="./main.js" defer></script>
 </head>
 <body>
 	<h1>Monitor -  that's what we see</h1>
 	<div id="container3">
+		<div id='hoverr'>hover me!</div>
 		<div class="items3">
 			<p>A computer monitor is an output device that displays information in pictorial form. A monitor usually comprises the visual display, circuitry, casing, and power supply. The display device in modern monitors is typically a thin film transistor liquid crystal display (TFT-LCD) with LED backlighting having replaced cold-cathode fluorescent lamp (CCFL) backlighting. Previous monitors used a cathode ray tube (CRT). Monitors are connected to the computer via VGA, Digital Visual Interface (DVI), HDMI, DisplayPort, USB-C, low-voltage differential signaling (LVDS) or other proprietary connectors and signals.</p>
 			<p>Originally, computer monitors were used for data processing while television sets were used for entertainment. From the 1980s onwards, computers (and their monitors) have been used for both data processing and entertainment, while televisions have implemented some computer functionality. The common aspect ratio of televisions, and computer monitors, has changed from 4:3 to 16:10, to 16:9.</p>
 			<p>Modern computer monitors are easily interchangeable with conventional television sets and vice versa. However, as computer monitors do not necessarily include integrated speakers nor TV tuners (such as Digital television adapters), it may not be possible to use a computer monitor as a TV set without external components.</p>
 			<p>From wikipedia</p>
 		</div>
-    	<img src="./sources/monitor.svg">
+		<div id='button'>show image</div>
+    	<img class = 'noshow' src="./sources/monitor.svg">
 	</div>
     <div id='container1'>
-		<h3>Layers of a monitor</h3>
+		<h3>Layers of a <span id='test1'>monitor</span></h3>
 		<ul>
 			<li>light source</li>
 			<li>polarizing filter</li>
@@ -31,15 +34,17 @@
     <div id='container2'>
         <h3>Functions: just show you what you have!</h3>
 		<h3>Things to consider</h3>
-        <ul>
-            <li>size</li>
-			<li>resolution</li>
-            <li>refresh rate</li>
-			<li>g-sync</li>
-			<li>free-sync</li>
-			<li>HDR</li>
-			<li>color accuracy</li>
-			<li>ports</li>
+        <ul class="slideshow-container">
+            <li class='test2 mySlides fade'>size</li>
+			<li class='test2 mySlides fade'>resolution</li>
+            <li class='test2 mySlides fade'>refresh rate</li>
+			<li class='test2 mySlides fade'>g-sync</li>
+			<li class='test2 mySlides fade'>free-sync</li>
+			<li class='test2 mySlides fade'>HDR</li>
+			<li class='test2 mySlides fade'>color accuracy</li>
+			<li class='test2 mySlides fade'>ports</li>
+			<a id="prev" onclick="plusSlides(-1)"><</a>
+			<a class="next" onclick="plusSlides(1)">></a>
         </ul>
     </div>
 </body>

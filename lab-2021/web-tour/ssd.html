@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SSD</title>
 	<link rel="stylesheet" href="./styles/common.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
 	<h1>SSD - where your files are located</h1>
     <div id="container3">
+        <div id='hoverr'>hover me!</div>
         <div class="items3">
             <p>A solid-state drive (SSD) is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory, and functioning as secondary storage in the hierarchy of computer storage. It is also sometimes called a solid-state device or a solid-state disk,[1] even though SSDs lack the physical spinning disks and movable read–write heads used in hard disk drives (HDDs) and floppy disks.</p>
             <p>Compared with electromechanical drives, SSDs are typically more resistant to physical shock, run silently, and have quicker access time and lower latency.[3] SSDs store data in semiconductor cells. As of 2019, cells can contain between 1 and 4 bits of data. SSD storage devices vary in their properties according to the number of bits stored in each cell, with single-bit cells ("SLC") being generally the most reliable, durable, fast, and expensive type, compared with 2- and 3-bit cells ("MLC" and "TLC"), and finally quad-bit cells ("QLC") being used for consumer devices that do not require such extreme properties and are the cheapest of the four. In addition, 3D XPoint memory (sold by Intel under the Optane brand), stores data by changing the electrical resistance of cells instead of storing electrical charges in cells, and SSDs made from RAM can be used for high speed, when data persistence after power loss is not required, or may use battery power to retain data when its usual power source is unavailable.[4] Hybrid drives or solid-state hybrid drives (SSHDs), such as Apple's Fusion Drive, combine features of SSDs and HDDs in the same unit using both flash memory and a HDD in order to improve the performance of frequently-accessed data.</p>
@@ -16,23 +18,26 @@
             <p>SSDs can use traditional HDD interfaces and form factors, or newer interfaces and form factors that exploit specific advantages of the flash memory in SSDs. Traditional interfaces (e.g. SATA and SAS) and standard HDD form factors allow such SSDs to be used as drop-in replacements for HDDs in computers and other devices. Newer form factors such as mSATA, M.2, U.2, NF1,[9][10] XFMEXPRESS[11] and EDSFF (formerly known as Ruler SSD)[12][13] and higher speed interfaces such as NVM Express (NVMe) over PCI Express can further increase performance over HDD performance.</p>
             <p>From wikipedia</p>
         </div>
-        <img src="./sources/ssd.svg">
+        <div id='button'>show image</div>
+        <img class = 'noshow' src="./sources/ssd.svg">
     </div>
     <div id='container1'>
-        <h3>Things inside an SSD</h3>
+        <h3>Things inside an <span id='test1'>SSD</span></h3>
         <ul>
             <li>processor</li>
             <li>buffer manager</li>
             <li>flash controller</li>
-            <li><a href='./memory.html'>RAM</a> buffer</li>
-            <li>host interface <a href='./cpu.html'>logic</a></li>     
+            <li class='test'><a href='./memory.html'>RAM</a> buffer</li>
+            <li class='test'>host interface <a href='./cpu.html'>logic</a></li>     
         </ul>
     </div>
     <div id='container2'>
         <h3>Functions</h3>
-        <ul>
-            <li>programs and files are housed on it</li>
-			<li>significantly faster than HDD</li>
+        <ul class="slideshow-container">
+            <li class='test2 mySlides fade'>programs and files are housed on it</li>
+			<li class='test2 mySlides fade'>significantly faster than HDD</li>
+            <a id="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
         </ul>
     </div>
 </body>

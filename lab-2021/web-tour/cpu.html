@@ -5,10 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CPU</title>
 	<link rel="stylesheet" href="./styles/common.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
 	<h1>CENTRAL processing unit</h1>
     <div id="container3">
+        <div id='hoverr'>hover me!</div>
         <div class="items3">
             <p>A central processing unit (CPU), also called a central processor, main processor or just processor, is the electronic circuitry within a computer that executes instructions that make up a computer program. The CPU performs basic arithmetic, logic, controlling, and input/output (I/O) operations specified by the instructions in the program. This contrasts with external components such as main memory and I/O circuitry,[1] and specialized processors such as graphics processing units (GPUs).</p>
             <p>The form, design, and implementation of CPUs have changed over time, but their fundamental operation remains almost unchanged. Principal components of a CPU include the arithmetic logic unit (ALU) that performs arithmetic and logic operations, processor registers that supply operands to the ALU and store the results of ALU operations, and a control unit that orchestrates the fetching (from memory) and execution of instructions by directing the coordinated operations of the ALU, registers and other components.</p>
@@ -16,23 +18,26 @@
             <p>An IC that contains a CPU may also contain memory, peripheral interfaces, and other components of a computer; such integrated devices are variously called microcontrollers or systems on a chip (SoC). Array processors or vector processors have multiple processors that operate in parallel, with no unit considered central. Virtual CPUs are an abstraction of dynamical aggregated computational resources.</p>
             <p>From wikipedia</p>
         </div>
-        <img src="./sources/cpu.svg">
+        <div id='button'>show image</div>
+        <img class = 'noshow' src="./sources/cpu.svg">
     </div>
 
     <div id='container1'>
-        <h3>Main components</h3>
+        <h3>Main components of a <span id='test1'>CPU</span></h3>
         <ul>
-            <li>control unit</li>
-            <li><a href='./memory.html'>memory</a> unit</li>
+            <li >control unit</li>
+            <li class='test'><a href='./memory.html'>memory</a> unit</li>
             <li>Arithmetic logic unit</li>
         </ul>
     </div>
     <div id='container2'>
         <h3>Functions</h3>
-        <ul>
-            <li>the heart and brain of the computer!!</li>
-			<li>take the address from memory</li>
-            <li>all data processing operations happen here</li>
+        <ul class="slideshow-container">
+            <li class='test2 mySlides fade'>the heart and brain of the computer!!</li>
+			<li class='test2 mySlides fade'>take the address from memory</li>
+            <li class='test2 mySlides fade'>all data processing operations happen here</li>
+            <a id="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
         </ul>
     </div>
 </body>
