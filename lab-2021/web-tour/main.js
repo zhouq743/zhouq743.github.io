@@ -31,8 +31,13 @@ function fontchange(){
 var slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function minusSlides() {
+    console.log('working');
+  showSlides(slideIndex += -1);
+}
+function plusSlides() {
+    console.log('working');
+  showSlides(slideIndex += 1);
 }
 
 function currentSlide(n) {
@@ -51,4 +56,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-document.getElementById('prev').addEventListener('click',plusSlides(-1));
+document.getElementById('prev').addEventListener('click', minusSlides);
+document.getElementById('next').addEventListener('click', plusSlides);

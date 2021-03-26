@@ -154,7 +154,7 @@ margin: auto;
 display: none;
 }
 
-#prev, .next {
+#prev, #next {
 cursor: pointer;
 position: absolute;
 top: 50%;
@@ -172,7 +172,7 @@ user-select: none;
 #prev{
 left:0px;
 }
-.next {
+#next {
 right: -40px;
 border-radius: 3px 0 0 3px;
 }
