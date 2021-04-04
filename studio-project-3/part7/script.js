@@ -59,24 +59,55 @@ function showPhotos() {
       photoContainer.classList.add(c);
     });
     var photoActions = photo.fields.actions;
-    photoActions.forEach(function(b) {
+    photoActions.forEach(function (b) {
       photoContainer.classList.add(b);
-    })
+    });
 
     if (photoContainer.classList.contains("conscious")) {
       document.querySelector(".conscious-container").append(photoContainer);
+      photoContainer.classList.add('left-column');
     } else {
       document.querySelector(".unconscious-container").append(photoContainer);
+      photoContainer.classList.add('right-column');
     }
-    
 
-
+    var exitButton = document.querySelector("#exit");
+    exitButton.addEventListener("click", function () {
+      photoContainer.style.display = "block";
+    });
 
     var filterSmiling = document.querySelector("#smiling-sign");
     var filterChilling = document.querySelector("#chilling-sign");
     var filterReading = document.querySelector("#reading-sign");
     var filterSmoking = document.querySelector("#smoking-sign");
-    
+    var filterSleeping = document.querySelector("#sleeping-sign");
+    var filterFighting = document.querySelector("#fighting-sign");
+    var filterRunning = document.querySelector("#running-sign");
+    var filterSitting = document.querySelector("#sitting-sign");
+    var filterWalking = document.querySelector("#walking-sign");
+    var filterStanding = document.querySelector("#standing-sign");
+    var filterPlaying = document.querySelector("#playing-sign");
+    var filterPatting = document.querySelector("#patting-sign");
+    var filterStaring = document.querySelector("#staring-sign");
+    var filterPosing = document.querySelector("#posing-sign");
+    var filterKissing = document.querySelector("#kissing-sign");
+    var filterDoodling = document.querySelector("#doodling-sign");
+    var filterHandshaking = document.querySelector("#handing-sign");
+    var filterWatching = document.querySelector("#watching-sign");
+
+    // var filters=[filterSmiling,filterChilling,filterReading,filterSmoking,filterSleeping,filterFighting,filterRunning,filterSitting,filterWalking,filterStanding,filterPlaying,filterPatting,filterStaring,filterPosing,filterKissing,filterDoodling,filterHandshaking,filterWatching];
+
+    // var classNames=['smiling','chilling','reading','smoking','sleeping','fighting','running','sitting','walking','standing','playing-music','patting','staring','posing','kissing','doodling','shaking-hands','watching'];
+    // filters.forEach((item,index) => {
+    //   item.addEventListener('click',function(){
+    //     console.log(classNames[index]);
+    //     if (photoContainer.classList.contains(classNames[index])){
+    //       photoContainer.style.display = 'block';
+    //     } else{
+    //       photoContainer.style.display = 'none';
+    //     };
+    //   });
+    // })
 
     filterSmiling.addEventListener("click", function () {
       if (photoContainer.classList.contains("smiling")) {
@@ -85,22 +116,120 @@ function showPhotos() {
         photoContainer.style.display = "none";
       }
     });
-        filterChilling.addEventListener("click", function () {
+    filterChilling.addEventListener("click", function () {
       if (photoContainer.classList.contains("chilling")) {
         photoContainer.style.display = "block";
       } else {
         photoContainer.style.display = "none";
       }
     });
-            filterReading.addEventListener("click", function () {
+    filterReading.addEventListener("click", function () {
       if (photoContainer.classList.contains("reading")) {
         photoContainer.style.display = "block";
       } else {
         photoContainer.style.display = "none";
       }
     });
-                filterSmoking.addEventListener("click", function () {
+    filterSmoking.addEventListener("click", function () {
       if (photoContainer.classList.contains("smoking")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterSleeping.addEventListener("click", function () {
+      if (photoContainer.classList.contains("sleeping")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterFighting.addEventListener("click", function () {
+      if (photoContainer.classList.contains("fighting")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterRunning.addEventListener("click", function () {
+      if (photoContainer.classList.contains("running")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterSitting.addEventListener("click", function () {
+      if (photoContainer.classList.contains("sitting")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterWalking.addEventListener("click", function () {
+      if (photoContainer.classList.contains("walking")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterStanding.addEventListener("click", function () {
+      if (photoContainer.classList.contains("standing")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterPlaying.addEventListener("click", function () {
+      if (photoContainer.classList.contains("playing-music")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterPatting.addEventListener("click", function () {
+      if (photoContainer.classList.contains("patting")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterStaring.addEventListener("click", function () {
+      if (photoContainer.classList.contains("staring")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterPosing.addEventListener("click", function () {
+      if (photoContainer.classList.contains("posing")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterKissing.addEventListener("click", function () {
+      if (photoContainer.classList.contains("kissing")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterDoodling.addEventListener("click", function () {
+      if (photoContainer.classList.contains("doodling")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterHandshaking.addEventListener("click", function () {
+      if (photoContainer.classList.contains("shaking-hands")) {
+        photoContainer.style.display = "block";
+      } else {
+        photoContainer.style.display = "none";
+      }
+    });
+    filterWatching.addEventListener("click", function () {
+      if (photoContainer.classList.contains("watching")) {
         photoContainer.style.display = "block";
       } else {
         photoContainer.style.display = "none";
@@ -120,4 +249,3 @@ function showPhotos() {
     // );
   });
 }
-
