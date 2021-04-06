@@ -31,12 +31,6 @@ function consoleLogPhotos() {
   });
 }
 
-function playAudio() {
-  var audio1 = new Audio('door_mixdown.mp3');
-  audio1.volume = 0.1;
-  audio1.play();
-}
-
 function showPhotos() {
   console.log("showPhotos()");
   photos.forEach((photo) => {
@@ -121,7 +115,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterChilling.addEventListener("click", function () {
       if (photoContainer.classList.contains("chilling")) {
@@ -136,7 +129,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterSmoking.addEventListener("click", function () {
       if (photoContainer.classList.contains("smoking")) {
@@ -144,7 +136,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterSleeping.addEventListener("click", function () {
       if (photoContainer.classList.contains("sleeping")) {
@@ -152,7 +143,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterFighting.addEventListener("click", function () {
       if (photoContainer.classList.contains("fighting")) {
@@ -160,7 +150,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterRunning.addEventListener("click", function () {
       if (photoContainer.classList.contains("running")) {
@@ -168,7 +157,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterSitting.addEventListener("click", function () {
       if (photoContainer.classList.contains("sitting")) {
@@ -176,7 +164,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterWalking.addEventListener("click", function () {
       if (photoContainer.classList.contains("walking")) {
@@ -184,7 +171,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterStanding.addEventListener("click", function () {
       if (photoContainer.classList.contains("standing")) {
@@ -192,7 +178,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterPlaying.addEventListener("click", function () {
       if (photoContainer.classList.contains("playing-music")) {
@@ -200,7 +185,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterPatting.addEventListener("click", function () {
       if (photoContainer.classList.contains("patting")) {
@@ -208,7 +192,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterStaring.addEventListener("click", function () {
       if (photoContainer.classList.contains("staring")) {
@@ -216,7 +199,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterPosing.addEventListener("click", function () {
       if (photoContainer.classList.contains("posing")) {
@@ -224,7 +206,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterKissing.addEventListener("click", function () {
       if (photoContainer.classList.contains("kissing")) {
@@ -232,7 +213,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterDoodling.addEventListener("click", function () {
       if (photoContainer.classList.contains("doodling")) {
@@ -240,7 +220,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterHandshaking.addEventListener("click", function () {
       if (photoContainer.classList.contains("shaking-hands")) {
@@ -248,7 +227,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
     filterWatching.addEventListener("click", function () {
       if (photoContainer.classList.contains("watching")) {
@@ -256,7 +234,6 @@ function showPhotos() {
       } else {
         photoContainer.style.display = "none";
       };
-      playAudio();
     });
 
     // var filterUncon = document.querySelector(".button-unconscious");
