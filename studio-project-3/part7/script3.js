@@ -31,6 +31,7 @@ function consoleLogPhotos() {
   });
 }
 
+
 function playAudio() {
   var audio1 = new Audio('door_mixdown.mp3');
   audio1.volume = 0.1;
@@ -257,6 +258,19 @@ function showPhotos() {
         photoContainer.style.display = "none";
       };
       playAudio();
+    });
+
+    $('.photo-container').mouseover(function(){
+      $(this).addClass('test');
+      $('.photo-container').not(".test").addClass('blur');
+      $('.label-container').addClass('blur');
+      $('h1').addClass('blur');
+    });
+    $('.photo-container').mouseout(function(){
+      $(this).removeClass('test');
+      $('.photo-container').not(".test").removeClass('blur');
+      $('.label-container').removeClass('blur');
+      $('h1').removeClass('blur');
     });
 
     // var filterUncon = document.querySelector(".button-unconscious");

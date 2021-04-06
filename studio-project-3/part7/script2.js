@@ -37,6 +37,14 @@ function playAudio() {
   audio1.play();
 }
 
+document.querySelectorAll('.actions-container').forEach(el => {
+  el.style.display = 'none';
+});
+document.querySelector('#show-lines').addEventListener('click',function(){
+  document.querySelectorAll('.actions-container').forEach(el => {
+    el.style.display = 'grid';
+})});
+
 function showPhotos() {
   console.log("showPhotos()");
   photos.forEach((photo) => {

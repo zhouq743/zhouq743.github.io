@@ -75,6 +75,15 @@ img {
   grid-template-columns: 30% 40% 30%;
   align-items: top;
 }
+.show-lines {
+  background: black;
+  color: white;
+  height: 9vw;
+  font-size: 4vw;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: top;
+}
 #exit {
   background-color: red;
   height: 9vw;
@@ -92,6 +101,15 @@ img {
 #uarrow {
   margin-top: -3.5vw;
   text-align: center;
+}
+#darrow {
+  margin-top: 1.5vw;
+  text-align: center;
+}
+#show-lines{
+  cursor: pointer;
+  margin-top: -3.2vw;
+  font-size: 3vw;
 }
 
 .actions-container {
@@ -149,11 +167,7 @@ img {
 .gray{
   background-color: #808183;
 }
-.right-column :hover{
-  transform: scale(1.5) translate(-60%);
-  transition: 1s;
-}
-.left-column :hover{
-  transform: scale(1.5) translate(60%);
-  transition: 1s;
+.blur{
+  -webkit-filter: blur(5px); /* Chrome, Safari, Opera */
+  filter: blur(5px);
 }
