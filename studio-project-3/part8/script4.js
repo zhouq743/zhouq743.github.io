@@ -401,18 +401,18 @@ function showPhotos() {
       $('h1').removeClass('blur');
     });
 
-    $('.photo-container').touchstart(function(){
+    $('.photo-container').on('taphold',(function(){
       $(this).addClass('test');
       $('.photo-container').not(".test").addClass('blur');
       $('.label-container').addClass('blur');
       $('h1').addClass('blur');
-    });
-    $('.photo-container').touchend(function(){
-      $(this).removeClass('test');
-      $('.photo-container').not(".test").removeClass('blur');
-      $('.label-container').removeClass('blur');
-      $('h1').removeClass('blur');
-    });
+    }));
+    // $('.photo-container').touchend(function(){
+    //   $(this).removeClass('test');
+    //   $('.photo-container').not(".test").removeClass('blur');
+    //   $('.label-container').removeClass('blur');
+    //   $('h1').removeClass('blur');
+    // });
 
   });
 }
