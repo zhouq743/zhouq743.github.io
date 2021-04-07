@@ -239,15 +239,18 @@ img {
     width: 47vw;
     font-size: 4vw;
     height: 13vw;
+    margin-bottom: 1vw;
   }
   .exit-label {
     width: 47vw;
     height: 13vw;
+    margin-bottom: 1vw;
   }
   .show-lines {
     width: 47vw;
     font-size: 4vw;
     height: 13vw;
+    margin-bottom: 1vw;
   }
   .arrow {
     font-size: 10vw;
@@ -291,6 +294,7 @@ img {
   .actions-container {
     width: 47vw;
     height: 13vw;
+    margin-bottom: 1vw;
   }
   .title {
     font-size: 6vw;
