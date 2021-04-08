@@ -54,7 +54,7 @@ img {
   background: black;
   color: white;
   height: 9vw;
-  font-size: 4vw;
+  font-size: 3.6vw;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100% 100%;
@@ -79,7 +79,7 @@ img {
   background: black;
   color: white;
   height: 9vw;
-  font-size: 4vw;
+  font-size: 3.6vw;
   display: grid;
   grid-template-columns: 30% 40% 30%;
   align-items: top;
@@ -88,7 +88,7 @@ img {
   background: black;
   color: white;
   height: 9vw;
-  font-size: 4vw;
+  font-size: 3.6vw;
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: top;
@@ -118,15 +118,15 @@ img {
 }
 #show-lines {
   cursor: pointer;
-  margin-top: -2.7vw;
-  margin-left: 0.5vw;
-  font-size: 3vw;
+  margin-top: -3vw;
+  /* margin-left: 0.5vw; */
+  font-size: 3.6vw;
 }
 #hide-lines {
   cursor: pointer;
   margin-top: -2.7vw;
   margin-left: 0.5vw;
-  font-size: 3vw;
+  font-size: 3.5vw;
 }
 
 .actions-container {
@@ -140,7 +140,7 @@ img {
   align-items: flex-start;
 }
 .title {
-  font-size: 3vw;
+  font-size: 3.5vw;
   margin-top: .7vw;
   margin-left: 0.6vw;
 }
@@ -239,7 +239,7 @@ img {
   }
   .awareness-label {
     width: 47vw;
-    font-size: 8vw;
+    font-size: 6vw;
     height: 13vw;
     margin-bottom: 1vw;
   }
@@ -259,12 +259,12 @@ img {
   }
   #aware {
     grid-column-start: 1;
-    font-size: 8vw;
-    transform: translateY(-10vw) translateX(2vw);
+    font-size: 6vw;
+    transform: translateY(-12vw) translateX(2vw);
     text-align: left;
   }
   #unaware {
-    transform: translateY(3vw) translateX(1vw);
+    transform: translateY(1vw) translateX(1vw);
   }
   #larrow {
     grid-column-start: 2;
@@ -281,10 +281,10 @@ img {
   }
   #exit {
     height: 13vw;
-    font-size: 8vw;
+    font-size: 6vw;
   }
   #exit p {
-    transform: translate(1vw,3vw);
+    transform: translate(1vw,2vw);
   }
   #show-lines {
     font-size: 6vw;
