@@ -18,6 +18,9 @@ function gotAllItems(err) {
   showItems();
 }
 
+var myButton = document.querySelector('#button');
+var myButton2 = document.querySelector('#button2');
+
 function showItems() {
   items.forEach((item) => {
 
@@ -35,29 +38,27 @@ function showItems() {
       itemContainer.classList.add(c);
     });
 
+    myButton.addEventListener('click',function(){
+      if (itemContainer.classList.contains('food')){
+        itemContainer.style.display = 'block';
+      } else {
+        itemContainer.style.display = 'none';
+      }
+    })
+
+    myButton2.addEventListener('click',function(){
+      if (itemContainer.classList.contains('utensils')){
+        itemContainer.style.display = 'block';
+      }
+    })
+
     if (itemContainer.classList.contains('utensils')){
       utensilContainer.append(itemContainer);
     } else{
       document.querySelector('#container').append(itemContainer);
     }
 
-    if (item.fields.name === "bowl") {
-      for (var i=0; i<3; i++) {
-        var bowlImage = document.createElement('img');
-        bowlImage.src = item.fields.images[0].url;
-        bowlImage.classList.add("bowl");
-        itemContainer.appendChild(bowlImage);
-      }
-    }
 
-    if (item.fields.name === "chopsticks") {
-      for (var i=0; i<3; i++) {
-        var chopImage = document.createElement('img');
-        chopImage.src = item.fields.images[0].url;
-        chopImage.classList.add("chopsticks");
-        itemContainer.appendChild(chopImage);
-      }
-    }
 
   });
 };
