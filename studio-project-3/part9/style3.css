@@ -368,7 +368,7 @@ hr{
     transform: translateY(-4vw);
   }
   #des p {
-    font-size: 4vw;
+    font-size: 3.8vw;
     transform: translate(0.5vw,-0.5vw);
   }
   .actions-container {
@@ -381,7 +381,7 @@ hr{
     transform: translate(0.5vw,-0.5vw);
   }
   .description {
-    font-size: 4vw;
+    font-size: 3.8vw;
     transform: translate(0.5vw,-1vw);
   }
   .signs {
