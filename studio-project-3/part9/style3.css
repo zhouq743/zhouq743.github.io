@@ -313,9 +313,6 @@ hr{
     /* align-self: center; */
     justify-self: center;
   }
-  .photo-container {
-    width: 49vw;
-  }
   .photo-container img {
     width: 47vw;
     height: auto;
