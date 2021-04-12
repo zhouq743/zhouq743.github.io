@@ -267,6 +267,9 @@ hr{
     width: 96vw;
     height: 13vw;
   }
+  #credit p{
+    font-size: 6vw;
+  }
   h1 {
     font-size: 8vw;
     padding-top: 1.5vw;

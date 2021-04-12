@@ -427,7 +427,7 @@ function showPhotos() {
       $('h1').removeClass('blur');
     });
 
-    $('.photo-container').on('taphold', (function () {
+    $('.photo-container').on('tap', (function () {
       $(this).addClass('test');
       $('.photo-container').not(".test").addClass('blur');
       $('.label-container').addClass('blur');
