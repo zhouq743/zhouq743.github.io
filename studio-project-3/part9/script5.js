@@ -418,20 +418,23 @@ function showPhotos() {
       $(this).addClass('test');
       $('.photo-container').not(".test").addClass('blur');
       $('.label-container').addClass('blur');
-      $('h1').addClass('blur');
+      $('#heading-container').addClass('blur');
+      $('#credit').addClass('blur');
     });
     $('.photo-container').mouseout(function () {
       $(this).removeClass('test');
       $('.photo-container').not(".test").removeClass('blur');
       $('.label-container').removeClass('blur');
-      $('h1').removeClass('blur');
+      $('#heading-container').removeClass('blur');
+      $('#credit').removeClass('blur');
     });
 
     $('.photo-container').on('tap', (function () {
       $(this).addClass('test');
       $('.photo-container').not(".test").addClass('blur');
       $('.label-container').addClass('blur');
-      $('h1').addClass('blur');
+      $('#heading-container').addClass('blur');
+      $('#credit').addClass('blur');
     }));
     // $('.photo-container').touchend(function(){
     //   $(this).removeClass('test');

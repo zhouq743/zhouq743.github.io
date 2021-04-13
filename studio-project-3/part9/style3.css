@@ -236,10 +236,10 @@ hr{
   width: 98vw;
   background: black;
   display: grid;
-  grid-template-rows: 15% 85%;
+  grid-template-rows: 0% 95%;
   font-size: 3vw;
   font-weight: 800;
-  top: 1.3vw;
+  top: 2.6vw;
 }
 #credit hr{
   border-bottom: 0.4vw solid white;
@@ -247,9 +247,9 @@ hr{
 #credit p{
   position: relative;
   color: white;
-  font-size: 4vw;
+  font-size: 3.4vw;
   padding: 1.5vw 1vw 0px;
-  line-height: 60%;
+  line-height: 100%;
   margin: 0;
 }
 .hide {
@@ -268,7 +268,7 @@ hr{
     height: 13vw;
   }
   #credit p{
-    font-size: 6vw;
+    font-size: 5.5vw;
   }
   h1 {
     font-size: 8vw;
