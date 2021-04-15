@@ -37,7 +37,14 @@ document.querySelector('#show-lines').addEventListener('click', function () {
   document.querySelectorAll('.actions-container').forEach(el => {
     el.style.display = 'grid';
   })
+  document.querySelector('#credit').style.top = '2.6vw';
 });
+document.querySelector('#show-lines').addEventListener('click', function(){
+  document.querySelector('.label-container').style.height = 'auto';
+  height = document.querySelector('.label-container').offsetHeight;
+  document.querySelector('.conscious-container').style.height = height + 'px';
+  document.querySelector('.unconscious-container').style.height = height + 'px';
+})
 
 document.querySelector('#show-lines').addEventListener('click', function () {
   document.querySelector('.hide').classList.remove('hide');
@@ -51,6 +58,10 @@ document.querySelector('#hide-lines').addEventListener('click', function () {
   document.querySelectorAll('.actions-container').forEach(el => {
     el.style.display = 'none';
   });
+  document.querySelector('.label-container').style.height = '40vw';
+  document.querySelector('.conscious-container').style.height = 'calc(100vh - 13vw)';
+  document.querySelector('.unconscious-container').style.height = 'calc(100vh - 13vw)';
+  document.querySelector('#credit').style.top = '2.6vw';
 })
 
 function topFunction() {
@@ -78,6 +89,22 @@ function mobileFunction(x) {
     document.querySelector('.show-lines').style.order = '2';
     document.querySelector('#aware-label').style.order = '3';
     document.querySelector('#unaware-label').style.order = '4';
+    document.querySelector('.label-container').style.height = 'auto';
+    document.querySelector('#credit').style.top = '2vw';
+    var h = document.querySelector('.label-container').offsetHeight + document.querySelector('#heading-container').offsetHeight *1.5;
+    var windowh = window.innerHeight * 0.92;
+    document.querySelector('.conscious-container').style.height = windowh - h + 'px';
+    document.querySelector('.unconscious-container').style.height = windowh - h + 'px';
+    var exitButton = document.querySelector("#exit");
+    exitButton.addEventListener("click", function () {
+      var h = document.querySelector('.label-container').offsetHeight + document.querySelector('#heading-container').offsetHeight *1.5;
+      var windowh = window.innerHeight;
+      document.querySelector('.conscious-container').style.maxHeight = windowh - h + 'px';
+      document.querySelector('.unconscious-container').style.maxHeight = windowh - h + 'px';
+    });
+    document.querySelector('#hide-lines').addEventListener('click', function(){
+      document.querySelector('.label-container').style.height = 'auto';
+    });
   } else {
     document.querySelectorAll('.actions-container').forEach(ac => {
       ac.classList.remove('resize')
@@ -166,6 +193,11 @@ function showPhotos() {
         document.querySelector('.not-hiding').classList.add('hide');
         document.querySelector('#show-map-label').style.display = 'grid';
       }
+      // if (x.matches){
+      //   var h = document.querySelector('.label-container').offsetHeight + document.querySelector('#heading-container').offsetHeight *1;
+      //   var windowh = window.innerHeight;
+      //   document.querySelector('.conscious-container').style.height = windowh - h + 'px';
+      // }
       topFunction();
     });
 
