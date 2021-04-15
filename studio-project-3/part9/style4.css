@@ -8,6 +8,28 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* width */
+.conscious-container::-webkit-scrollbar {
+  width: 1.3vw;
+}
+.unconscious-container::-webkit-scrollbar {
+  width: 1.3vw;
+}
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* border: 0.3vw solid black; */
+  background: black;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border: 0.2vw solid black;
+  background: white; 
+}
+
 #heading-container{
   position: relative;
   left: 50%;
@@ -37,20 +59,8 @@ h1 {
   margin:0;
   align-self: center;
 }
-.progress-container{
-  width: 1vw;
-  height: 100vh;
-  border: 1px solid black;
-  position: fixed;
-  left: 0;
-}
-.progress-bar {
-  height: 0%;
-  background: black;
-  width: 1vw;
-}
 .photo-container img {
-  width: 35vw;
+  width: 32.5vw;
   height: auto;
   border: 12px solid black;
 }
@@ -66,12 +76,17 @@ h1 {
 }
 .conscious-container {
   grid-column-start: 1;
-  height: calc(100vh - 13vw);
-  overflow: scroll;
+  height: calc(100vh - 20.6vw);
+  min-height: 39.9vw;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  direction:rtl; 
 }
 .unconscious-container {
-  height: calc(100vh - 13vw);
-  overflow: scroll;
+  height: calc(100vh - 20.6vw);
+  -webkit-overflow-scrolling: touch;
+  min-height: 39.9vw;
+  overflow-y: scroll;
 }
 .photo-container {
   margin-bottom: 1vw;
@@ -79,7 +94,8 @@ h1 {
 .label-container {
   display: grid;
   grid-template-rows: 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw 9vw;
-  height: calc(100vh - 10.3vw);
+  height: calc(100vh - 20.6vw);
+  min-height: 39.9vw;
   row-gap: 1.3vw;
   align-items: flex-start;
 }
@@ -256,7 +272,7 @@ hr{
   grid-template-rows: 0% 95%;
   font-size: 3vw;
   font-weight: 800;
-  top: 0vw;
+  top: 2.6vw;
 }
 #credit hr{
   border-bottom: 0.4vw solid white;
@@ -274,13 +290,19 @@ hr{
 }
 
 @media screen and (max-width: 480px) {
+  .conscious-container::-webkit-scrollbar {
+    width: 2.3vw;
+  }
+  .unconscious-container::-webkit-scrollbar {
+    width: 2.3vw;
+  }
   #heading-container{
     grid-template-columns: 87% 13%;
     width: 96vw;
     height: 13vw;
   }
   #credit {
-    margin-top: 3vw;
+    transform: translate(-50%,-6vw);
     width: 96vw;
     height: 13vw;
   }
@@ -303,14 +325,14 @@ hr{
     width: 96vw;
   }
   .conscious-container {
-    transform: translateY(5px);
+    transform: translateY(-9vw);
     grid-column-start: line1;
     grid-column-end: line2;
     grid-row-start: row2-start;
     grid-row-end: 3;
   }
   .unconscious-container {
-    transform: translateY(5px);
+    transform: translateY(-9vw);
     grid-column-start: line2;
     grid-column-end: end;
     grid-row-start: row2-start;
@@ -325,16 +347,16 @@ hr{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
+    height: 27vw;
   }
   .label-container img{
     border: none;
     min-width: 3.5vw;
     max-width: 10vw;
-    /* align-self: center; */
     justify-self: center;
   }
   .photo-container img {
-    width: 47vw;
+    width: 43vw;
     height: auto;
     border: 6px solid black;
   }
