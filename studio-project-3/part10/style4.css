@@ -79,10 +79,12 @@ h1 {
   height: calc(100vh - 20.6vw);
   min-height: 39.9vw;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: auto;
   direction:rtl; 
 }
 .unconscious-container {
   height: calc(100vh - 20.6vw);
+  -webkit-overflow-scrolling: auto;
   min-height: 39.9vw;
   overflow-y: scroll;
 }

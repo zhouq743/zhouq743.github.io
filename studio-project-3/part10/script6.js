@@ -50,7 +50,7 @@ document.querySelector("#show-lines").addEventListener("click", function () {
   document.querySelector(".hide").classList.remove("hide");
   document.querySelector("#show-map-label").style.display = "none";
   // document.querySelector('.targeted').style.display = 'none';
-  document.querySelector(".targeted").classList.remove("targeted");
+  if(x.matches){document.querySelector(".targeted").classList.remove("targeted");}
 });
 document.querySelector("#hide-lines").addEventListener("click", function () {
   document.querySelector("#show-map-label").style.display = "grid";
@@ -208,10 +208,10 @@ function showPhotos() {
     var exitButton = document.querySelector("#exit");
     exitButton.addEventListener("click", function () {
       photoContainer.style.display = "block";
-      document.querySelector(".targeted").style.display = "none";
-      document.querySelector(".targeted").classList.remove("targeted");
       if (x.matches) {
         mobileShowScroll();
+        document.querySelector(".targeted").style.display = "none";
+        document.querySelector(".targeted").classList.remove("targeted");
       } else {
         showScroll();
       }
