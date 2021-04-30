@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>O-mikuji</title>
+</head>
+<body>
+    <div id='instruction'><div>
+        <p>Omikuji are fortune-telling strips of paper at Japanese shrines and temples. They offer both a general blessing and an outline of your fortune for more specific aspects of your life.</p>
+        <p class='red-text'>You only have one chance each day.</p>
+    </div></div>
+    <div id="open-instruction" class="add-gradient open-instruction"></div>
+    
+    <div id='compass-container'>
+        <div class='parts parts-with-hover' id='top-left'></div>
+        <div class='parts parts-with-hover' id='top-right'></div>
+        <div class='parts parts-with-hover' id='bottom-left'></div>
+        <div class='parts parts-with-hover' id='bottom-right'></div>
+    </div>
+    <div id='eyeball-container'>
+        <div id='eye-container'></div>
+    </div>
+
+    <form id='input-container'>
+        <input type="text" id='input-question' name='question' placeholder="Seems you're prepared. Ask me a question.">
+        <input type="submit" value="" id='submit' disabled>
+    </form>
+
+    <div id='result-container'>
+        <div id='result'></div>
+    </div>
+
+    <div id='white-bg'></div>
+    <div id='description-container'></div>
+    <div id='last-button' class="add-gradient"></div>
+
+<script src="./airtable.browser.js"></script>
+<script src="./jquery.js"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
