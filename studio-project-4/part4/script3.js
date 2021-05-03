@@ -318,8 +318,7 @@ function openDes(){
 
 
 function closeDes(){
-    window.open('', '_self', '');
-    window.close();
+    window.location.replace("https://zhouq743.github.io/");
 }
 
 var counts = 0;
