@@ -315,7 +315,10 @@ function openDes(){
     // $('#last-button').css('top','calc(50vh - 13vw)');
     // $('#last-button').css('left','calc(50vw - 40vh)');
 }
+
+
 function closeDes(){
+    window.open('', '_self', '');
     window.close();
 }
 
