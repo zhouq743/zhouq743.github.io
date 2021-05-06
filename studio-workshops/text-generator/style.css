@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(245, 191, 218);
+}
+
+#my-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 400px;
+  cursor: pointer;
+  border: 5px dashed deeppink;
+  font-size: 3vw;
+  text-align: center;
+  width: 40vw;
+  padding: 1vw;
+  box-shadow: inset 0px 1px 0px 0px #fbafe3;
+  background: linear-gradient(to bottom, #ff5bb0 5%, #f567b3 100%);
+  background-color: #ff5bb0;
+  border-radius: 6px;
+  border: 1px solid #eb75c2;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #e61c88;
+}
+
+#my-button:hover {
+  background: linear-gradient(to bottom, #f567b3 5%, #ff5bb0 100%);
+  background-color: #f567b3;
+}
+
+path {
+  fill: transparent;
+}
+
+text {
+  letter-spacing: 300%;
+  font-size: 5vw;
+  fill: #FF9800;
+}
+
+h2 {
+  font-size: 3vw;
+  position: absolute;
+  top: 500px;
+  left: 5vw;
+}
+
+.list-one {
+  color: chocolate;
+}
+
+.list-two {
+  color: indigo;
+}
+
+.list-three {
+  color: green;
+}
