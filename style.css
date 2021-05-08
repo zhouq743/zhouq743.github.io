@@ -1,28 +1,361 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 body {
-    background-color: rgb(235, 173, 196);
-    margin: 20px;
+  background-color: black;
+  color: white;
+  margin: 20px;
 }
 
-h1{
-    font-size: 50px;
+#my-logo {
+  width: 12vw;
+  min-width: 120px;
+}
+
+header {
+  width: 98vw;
+  height: 6vw;
+  min-height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mobile-menu {
+  display: none;
+}
+
+header p {
+  position: absolute;
+  cursor: pointer;
+  word-spacing: 2vw;
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  bottom: 0;
+  align-items: baseline;
+}
+.menu-option {
+  cursor: pointer;
+}
+.menu-option:hover {
+  font-weight: bold;
+}
+#about {
+  right: 1vw;
+}
+
+#workshops {
+  right: 15vw;
+}
+
+#lab {
+  right: 9vw;
+}
+
+#studio {
+  right: 26vw;
+}
+
+#projects-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14vw;
+  width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 48.5vw;
+  min-width: 300px;
+  /* height: calc(48.5vw / 4 * 3);
+    min-height: 300; */
+  margin-bottom: 1vw;
+}
+
+.image-container img {
+  width: 48.5vw;
+  min-width: 300px;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  filter: brightness(40%);
+}
+
+.image-container h3 {
+  position: absolute;
+  text-align: center;
+  width: 48.5vw;
+  top: calc(48.5vw / 8 * 3);
+  transform: translateY(-100%);
+  font-size: 3vw;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  display: none;
+  cursor: pointer;
+}
+
+#project3-title {
+  top: 75%;
+}
+
+#project4-title {
+  top: 75%;
+}
+
+#workshops-container {
+  display: none;
+}
+
+#title-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14vw;
+  width: 98vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#title-container li {
+  list-style: none;
+  line-height: 150%;
+  width: 19.6vw;
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  filter: brightness(40%);
+}
+
+#title-container li:hover {
+  font-weight: bold;
+}
+
+#workshop-image-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60vw;
+  top: 20vw;
+}
+
+#workshop-image-container img {
+  width: 60vw;
+  cursor: pointer;
+}
+
+#lab-container {
+  color: white;
+  top: 14vw;
+  position: absolute;
+  font-size: 1.5vw;
+  font-family: "Courier New", Courier, monospace;
+  display: none;
+}
+
+#about-container {
+  top: 11vw;
+  position: absolute;
+  height: 50vw;
+  min-height: 90vh;
+  font-family: sans-serif;
+  line-height: 3vw;
+  display: none;
+}
+#about-container h1 {
+  font-size: 8vw;
+  line-height: 0%;
+}
+#intro {
+  position: absolute;
+  top: 12vw;
+  font-size: 2vw;
+  width: 70vw;
+  color: rgb(151, 151, 151);
+}
+#more {
+  position: absolute;
+  top: 30vw;
+  font-size: 1.6vw;
+  color: rgb(151, 151, 151);
+  line-height: 1vw;
+}
+#portrait {
+  position: absolute;
+  width: 45vw;
+  left: 53vw;
+  bottom: 0;
+}
+#contact {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.6vw;
+  color: rgb(151, 151, 151);
+  width: 50vw;
+}
+
+@media screen and (max-width: 620px) {
+  #menu-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: white;
+    display: none;
+    opacity: 80%;
+  }
+  #projects-container {
+    top: 25vw;
+    justify-content: center;
+  }
+
+  .image-container {
+    min-width: 96vw;
+    margin-bottom: 2vw;
+  }
+
+  .image-container img {
+    min-width: 96vw;
+  }
+
+  #project1-title {
+    font-size: 4vw;
+    left: 50%;
+    top: calc(98vw / 8 * 3);
+    transform: translate(-50%, -100%);
+  }
+  #project2-title {
+    font-size: 4vw;
+    left: 50%;
+    top: calc(98vw / 8 * 3 + 98vw / 4 * 3);
+    transform: translate(-50%, -100%);
+  }
+  #project3-title {
+    font-size: 4vw;
+    left: 50%;
+    top: calc(98vw / 8 * 3 + 98vw / 4 * 6);
+    transform: translate(-50%, -100%);
+  }
+  #project4-title {
+    font-size: 4vw;
+    left: 50%;
+    top: calc(98vw / 8 * 3 + 98vw / 4 * 9);
+    transform: translate(-50%, -100%);
+  }
+
+  #title-container {
+    top: 25vw;
+    width: 90vw;
+    left: 5vw;
+    transform: translate(0);
+  }
+  #title-container li {
+    width: 40vw;
+    font-size: 3vw;
     text-align: center;
-}
-#communityagreement {
+  }
+  #workshop-image-container {
+    width: 96vw;
+    top: 60vw;
+    left: 2vw;
+    transform: translate(0);
+  }
+  #workshop-image-container img {
+    width: 96vw;
+  }
+  #mobile-menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2vw;
+    height: 6vw;
+  }
+  .menu-option {
+    position: absolute;
+    font-size: 4vw;
+    display: none;
+    z-index: 1000000;
+    font-size: 1.5vw;
+    color: black;
+    left: 2vw;
+    font-family: "Courier New", Courier, monospace;
+  }
+  #about {
+    top: 45vw;
+  }
 
-}
+  #workshops {
+    top: 27vw;
+  }
 
-#studioproject1 {
+  #lab {
+    top: 36vw;
+  }
 
-}
+  #studio {
+    top: 18vw;
+  }
 
-#labassign1{
+  .logo-drop {
+    top: 5vw;
+    position: absolute;
+  }
 
-}
-
-#cookbook{
-
-}
-
-#labassign2 {
-
+  #lab-container {
+    top: 25vw;
+    font-size: 4vw;
+    left: 2vw;
+  }
+  #about-container {
+    top: 25vw;
+    width: 98vw;
+    left: 2vw;
+    line-height: 6vw;
+  }
+  #about-container h1 {
+    font-size: 14vw;
+    line-height: 0%;
+  }
+  #intro {
+    position: absolute;
+    top: 19vw;
+    font-size: 4vw;
+    width: 90vw;
+  }
+  #more {
+    top: 60vw;
+    font-size: 4vw;
+    line-height: 2vw;
+  }
+  #portrait {
+    position: absolute;
+    width: 98vw;
+    left: 0vw;
+    bottom: 0;
+  }
+  #contact {
+    position: absolute;
+    top: 83vw;
+    font-size: 4vw;
+    width: 90vw;
+  }
 }
