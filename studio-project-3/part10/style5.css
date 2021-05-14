@@ -33,7 +33,7 @@ h1 {
   grid-column: 2 / 3;
   color: white;
   font-size: 2vw;
-  font-weight: 800;
+  font-weight: bold;
   margin:0;
   align-self: center;
 }
@@ -91,7 +91,7 @@ h1 {
   color: white;
   height: 9vw;
   font-size: 4vw;
-  font-weight: 800;
+  font-weight: bold;
   display: grid;
   max-width: 25vw;
   grid-template-columns: 40% 60%;
@@ -130,7 +130,7 @@ hr{
   color: white;
   height: 9vw;
   font-size: 5vw;
-  font-weight: 800;
+  font-weight: bold;
   display: grid;
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 15% 85%;
@@ -145,7 +145,7 @@ hr{
   color: white;
   height: 9vw;
   font-size: 3.4vw;
-  font-weight: 800;
+  font-weight: bold;
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 15% 85%;
@@ -168,7 +168,7 @@ hr{
 }
 #des p {
   font-size: 2.5vw;
-  font-weight: 500;
+  font-weight: normal;
   margin-left: 0.2vw;
   margin-top: 0;
 }
@@ -203,7 +203,7 @@ hr{
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: normal;
   margin-top: -0.2vw;
   margin-left: 0.6vw;
 }
@@ -219,7 +219,7 @@ hr{
   margin: 0;
   align-self: center;
   font-size: 3.4vw;
-  font-weight: 800;
+  font-weight: bold;
   /* margin-top: 2.5vw; */
   cursor: pointer;
 }
@@ -258,7 +258,7 @@ hr{
   display: grid;
   grid-template-rows: 0% 95%;
   font-size: 3vw;
-  font-weight: 800;
+  font-weight: bold;
   /* margin-top: 1.3vw; */
 }
 #credit hr{
