@@ -195,7 +195,7 @@ hr{
   grid-row: 2 / 3;
   grid-column: 1/2;
   font-size: 3.4vw;
-  font-weight: 800;
+  font-weight: bold;
   margin-top: .7vw;
   margin-left: 0.6vw;
 }
