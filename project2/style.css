@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "silkscreennormal";
+  src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+  font-family: silkscreennormal;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: #e9e1cd;
+}
+
+#character-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100vw;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#character-container img {
+  width: 8vw;
+  margin: 5vw;
+}
+#character-container h1 {
+  font-size: 5vw;
+}

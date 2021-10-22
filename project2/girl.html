@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="girl.css" />
+  <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <title>Get Out!</title>
+</head>
+
+<body>
+  <div id="container" class="filter">
+    <div id="wall"></div>
+    <div id="window">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <img src="./images/carpet.png" id="carpet">
+    <p class="hint" id="for-carpet">F</p>
+
+    <img src="./images/fridge.png" id="fridge">
+    <p class="hint" id="note">F</p>
+
+    <img src='./images/bed.png' id="bed">
+    <p class="hint" id="for-bed">F</p>
+
+    <img src="./images/desk.png" id="desk">
+    <p class="hint" id="for-desk">F</p>
+
+    <img src="./images/stove.png" id="stove">
+
+    <img src="./images/bear.png" id="bear">
+
+    <img src="./images/mirror.png" id="mirror">
+
+    <img src="./images/sofa.png" id="sofa">
+
+    <img src="./images/table.png" id="table">
+    <p class="hint" id="for-table">F</p>
+
+    <img src="./images/unopened.png" id="locker">
+    <p class="hint" id="for-locker">F</p>
+
+    <img src="./images/door.png" id='door'>
+    <p class="hint" id="for-door">F</p>
+
+    <img src="./images/girl.png" id="girl">
+    <img src="./images/boy.png" id="boy">
+  </div>
+
+  <div id="sticky-note">
+    <h2>Reminder!</h2>
+    <p><span>W </span>hen the dream starts,<br>
+      <span>N </span>eed light to beat the darkness.<br>
+      <span>E </span>njoy the last snacks before the danger,<br>
+      <span>S </span>ee the truth behind the disguise.
+    </p>
+    <p style="text-align: end;">--by angelina</p>
+  </div>
+
+  <div id="puzzle">
+      <div id="background"></div>
+      <h4 style="text-align:center; color: #5c3b1b; font-size: 1.5em; line-height: 0;">My items</h4>
+      <div class='direction' id="north"><img id="northimg"></div>
+      <p style="left: 50%; transform: translate(-50%,17px); top: 270px;" >W</p>
+      <div class='direction' id="south"><img></div>
+      <p style="left: 50%; transform: translate(-50%,15px); top: 430px;" >R</p>
+      <div class='direction' id="west" ><img src="" id="westimg"></div>
+      <p style="left: 50px; top: 340px;" >Q</p>
+      <div class='direction' id="east"><img src=""></div>
+      <p style="right: 60px; top: 340px;">E</p>
+      <div class='thumbnail2' id="fabric2"><div class="fabric" id="fabric3"></div></div>
+      <div class='thumbnail2' id="cuicuit"><img src="./images/cuicuit.png" id="purple"></div>
+      <div class='thumbnail2' id="coffee"><img src="./images/coffee.png" id="brown"></div>
+      <div class='thumbnail2' id="leaves"><img src="./images/leaves.png" id="green"></div>
+      <h4 style="color: #5c3b1b; font-size: 1.3em; line-height: 0; position: absolute; top: 190px;left: 50%; transform: translate(-50%,-20px) scale(120%); padding: 0;">locker</h4>
+      <h4 style="color: #5c3b1b; font-size: 1em; line-height: 100%; position: absolute; bottom: 0px;left: 30px; transform: scale(120%); padding: 0;">press keys to fill<br>enter to exit</h4>
+  </div>
+
+  <h1 id="door-locked">The door is locked!</h1>
+  <h1 id="chest">There must be something important inside.</h1>
+  <h1 id="chest2">I need more items!</h1>
+  <h1 id="chest3">Fill the items into the space</h1>
+  <h3 id="red-got">Get <span style="color: red;">Red fabric</span></h3>
+  <h3 id="purple-got">Get <span style="color: purple;">Purple circuit</span></h3>
+  <h3 id="green-got">Get <span style="color: green;">Green orchid leaves</span></h3>
+  <h3 id="brown-got">Get <span style="color: brown;">Brown coffee powder</span></h3>
+
+  <div id='intro'>
+    <p id="skip">Skip</p>
+    <div id="it2" class='dialog-container'>
+      <img src="./images/dialog-girl.png" class='dialog-img' id="profile-pic2">
+      <div class="dialog-box" id="girl-7">
+        <p>"anyway i must get out of here."</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="girl-6">
+        <p>"He's different too."</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+    </div>
+
+    <div id="it1" class='dialog-container'>
+      <img src="./images/dialog-girl.png" class='dialog-img' id="profile-pic">
+      <div class="dialog-box" id="girl-5">
+        <p>"OKay..."</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="boy-3">
+        <p>"Get some rest. I'll be back soon"</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="boy-2">
+        <p>"That's great! You must be hungry. I'll buy you your favorite cookies."</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="girl-4">
+        <p>"I...I'm good"</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="boy-1">
+        <p>"Oh, honey. You're awake. How do you feel?"</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="girl-3">
+        <p>"Why I can't remember anything?"</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="girl-2">
+        <p>"My room is different, but I can't tell why."</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+
+      <div class="dialog-box" id="girl-1">
+        <p>Wake up in the morning...</p>
+        <p class='continue'>>> enter to Continue</p>
+      </div>
+      
+    </div>
+  </div>
+  <p id="open-instruction">?</p>
+  <img src="./images/bag.png" id="open-item">
+
+  <div id="instruction">
+    <h2>instruction</h2>
+    <p><span>&#8592;</span><span>&#8593;</span><span>&#8594;</span><span>&#8595;</span> move</p>
+    <p><span>F</span> Get items</p>
+    <p id="small-text">enter to close</p>
+  </div>
+
+  <div id="my-bag">
+    <h2>My pocket</h2>
+    <div class='item-container' id="red-container">
+      <div class='thumbnail' class="fabric"><img src="./images/fabric.png"></div>
+      <h4>Fabric</h4>
+      <p class="description">Looks like it's from 1980s</p>
+    </div>
+
+    <div class='item-container' id="purple-container">
+      <div class='thumbnail' id=""><img src="./images/cuicuit.png"></div>
+      <h4>Cuicuit</h4>
+      <p class="description">From the lamp</p>
+    </div>
+
+    <div class='item-container' id="brown-container">
+      <div class='thumbnail' id=""><img src="./images/coffee.png"></div>
+      <h4>coffee powder</h4>
+      <p class="description">Smells so nice</p>
+    </div>
+
+    <div class='item-container' id="green-container">
+      <div class='thumbnail' id=""><img src="./images/leaves.png"></div>
+      <h4>orchid leaves</h4>
+      <p class="description">it's still fresh</p>
+    </div>
+  </div>
+  <script src="./jquery.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</body>
+
+</html>
