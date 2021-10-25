@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "silkscreennormal";
+  src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+  font-family: silkscreennormal;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: #e9e1cd;
+}
+.filter {
+  filter: brightness(60%);
+}
+.dialog-container {
+  position: absolute;
+  bottom: 0;
+  left: 280px;
+  width: 700px;
+  height: 170px;
+}
+.dialog-img {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+.dialog-box {
+  position: absolute;
+  width: 470px;
+  border: 3px solid #5c3b1b;
+  background-color: #f0e4d1;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 150px;
+  display: none;
+}
+.dialog-box p {
+  font-size: 1.4em;
+  margin: 10px;
+}
+.continue {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#it2 {
+  display: none;
+}
+#container {
+  height: 600px;
+  width: 1100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hint {
+  font-size: 2em;
+  border: 1px solid rgb(105, 58, 19);
+  background-color: #ffffff;
+  color: #5c3b1b;
+  position: absolute;
+}
+#girl {
+  width: 65px;
+  position: absolute;
+  top: 390px;
+  left: 80px;
+}
+#boy {
+  width: 100px;
+  position: absolute;
+  top: 365px;
+  left: 950px;
+  display: none;
+}
+#zombie {
+  width: 140px;
+  position: absolute;
+  top: 340px;
+  left: -20px;
+  display: none;
+}
+.dead-girl {
+  width: 150px;
+  position: absolute;
+  top: 410px;
+  left: 80px;
+}
+#carpet {
+  width: 500px;
+  /* height: 200px; */
+  position: absolute;
+  transform: translate(-30%, 0);
+  left: 50%;
+  bottom: 10px;
+  filter: contrast(180%) brightness(80%);
+  opacity: 70%;
+}
+#wall {
+  position: absolute;
+  height: 170px;
+  top: 0%;
+  width: 100%;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #f8efd1 20%,
+      #f8efd1 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #f8efd1 20%,
+        #f8efd1 80%,
+        transparent 80%,
+        transparent
+      )
+      50px 50px,
+    linear-gradient(#d8a46a 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, #d8a46a 8px, transparent 8px) -4px 0;
+  background-color: #f8efd1;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+#window {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #5c3b1b;
+  justify-content: space-around;
+  align-items: center;
+  transform: scale(90%);
+  left: 120px;
+}
+#window span {
+  width: 77.5px;
+  height: 52.5px;
+  background-color: #0e242c;
+}
+#bed {
+  width: 130px;
+  position: absolute;
+  top: 230px;
+  left: 100px;
+}
+#fridge {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 600px;
+}
+#desk {
+  width: 240px;
+  position: absolute;
+  top: 20px;
+  left: 250px;
+}
+#locker {
+  width: 80px;
+  position: absolute;
+  top: 140px;
+  left: 500px;
+}
+#dairy {
+  top: 25px;
+  left: 531px;
+}
+#sofa {
+  width: 300px;
+  position: absolute;
+  top: 140px;
+  left: 600px;
+}
+#table {
+  width: 250px;
+  position: absolute;
+  top: 275px;
+  left: 621px;
+}
+#mirror {
+  position: absolute;
+  bottom: 10px;
+  left: 240px;
+}
+#stove {
+  width: 150px;
+  position: absolute;
+  top: 60px;
+  left: 750px;
+}
+#bear {
+  width: 160px;
+  position: absolute;
+  top: 280px;
+  left: 520px;
+}
+#door {
+  right: 0;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#note {
+  top: 50px;
+  left: 685px;
+  display: none;
+}
+
+#background {
+  width: 380px;
+  height: 47vh;
+  border: 3px solid #5c3b1b;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: gold;
+}
+
+h1 {
+  color: #5c3b1b;
+  text-align: center;
+  display: none;
+}
+h3 {
+  text-align: center;
+  color: #5c3b1b;
+  font-size: 2em;
+  line-height: 0;
+  display: none;
+}
+
+#sound {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  border: 3px solid rgb(105, 58, 19);
+  width: 50px;
+  margin: 4px;
+  cursor: pointer;
+}
+.glow {
+  transform: scale(120%);
+  background-color: #d8a46a;
+}
+#memory img {
+  position: absolute;
+  width: 800px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#intro2 {
+  display: none;
+}
+#intro3 {
+  display: none;
+}
+#intro4 {
+  display: none;
+}
