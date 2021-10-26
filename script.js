@@ -10,7 +10,7 @@ function getNumber() {
 };
 function pj1() {
   var min = 1,
-      max = 5,
+      max = 4,
       random;
   do {
     random = Math.floor(Math.random() * (max - min)) + min;
