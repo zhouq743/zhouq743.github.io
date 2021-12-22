@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <title>Ted</title>
+</head>
+
+<body>
+  <audio id="myAudio" autoplay loop><source src="./background.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <audio id="zombie-sound" loop><source src="./zombie.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <div id="trash" style="display: none;"></div>
+
+  <div class="container" id="tool-shop-container" style="display: none;">
+    <img class="bg-img" src="./images/toolshop.png" id="tool-shop-img">
+    <img src="./images/blood.png" id="blood">
+    <img src="./images/paint.png" style="position: absolute; width: 26%;left: 1%;top: 37%;">
+    <img src="./images/sword3.png" class='glow' id="sword3" style="position: absolute; width: 5%; top: 50%; left: 19%; display: none;">
+    <p class="f" id="sword-f-1" style="top: 44%;left: 22%;">F</p>
+
+    
+    <img src="./images/fox.png" style="position: absolute; width: 4%; left: 60.6%; top: 2%;" id="fox">
+
+    <img src="./images/weapon.png" class="reference-box" id='weapon-box'>
+    <img class="reference-box" id="bread-box" style="opacity: 0;">
+    <img src="./images/bear.png" class="reference-box" id='bear-box'>
+    <img src="./images/girl-head.png" class="reference-box" id='head-box'>
+    <img class="reference-box" id="fox-box" style="opacity: 0;">
+    <img src="./images/coffin.png" class="reference-box" id='coffin-box'>
+    <img src="./images/window1.png" class="reference-box" id='pipe-box'>
+    <span class="door reference-box"></span>
+
+    <img src="./images/ladder.png" id="ladder">
+   
+    <img src="./images/sword1.png" class='glow' id="sword1" style="position: absolute; width: 5%; top: 29%; left: 95%; display: none;">
+    <img src="./images/zombie.png" id="zombie" style="width: 8vw; display: none; position: absolute;">
+  </div>
+
+  <div id="street-container" class="container filter">
+    <img src="./images/street.png" class="bg-img" id="street-img">
+    <div class="reference-box" style="left: 3%; width: 13%; height: 10%; bottom: 10%;"></div>
+    <div class="reference-box" style="left: 26%; width: 19%; height: 10%; bottom: 10%;"></div>
+    <div class="reference-box" style="left: 65%; width: 5%; height: 10%; bottom: 10%;"></div>
+    <div class="reference-box" style="left: 54%; width: 5%; height: 10%; bottom: 10%;"></div>
+
+    <div class="sign" style="left: 24%;top: 38%;" id="cookie-sign">
+      <h2>Lady N</h2>
+      <p style="width: 15vw;">the creator of the world famous cookies.</p>
+      <img src="./images/cookie.png" style="height: 4vw; position:absolute; left: 80%; top: 35%;">
+      <p style="text-align: center; padding-bottom: 5px; margin-bottom: 5px;"><span>F</span>to enter</p>
+    </div>
+
+    <div class="sign" style="left: 0%;top: 44%;" id="tool-sign">
+      <h2>Targot</h2>
+      <p style="width: 7vw;">we have all you need</p>
+      <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/808227e50718336.png" style="height: 4vw; position:absolute; left: 50%; top: 35%;">
+      <p style="text-align: center; padding-bottom: 5px; margin-bottom: 5px;"><span>F</span>to enter</p>
+    </div>
+
+    <div class="sign" style="width:25vw; left: 42%;top: 4%;" id="office-sign">
+      <h2>Monad tower</h2>
+      <p style="width: 7vw;">A truly contemporary office space,</p>
+      <img src="./images/com.png" style="height: 4vw; position:absolute; left: 71%; top: 35%;">
+    </div>
+
+    <div id="sign-sign">
+      <h2 style="font-size: 2rem;">Old York’s Times</h2>
+      <img src="./images/accident2.png" style="left: 0%; width: 60%;" id="accidant">
+      <p class="f" id="sword-f-4" style="top: 28%;left: 47%; display: block;">F</p>
+      <!-- <img src="./images/sword4.png" id="sword4" class='glow' style="position:absolute; left: 33%; top:40%; width: 21%;">  -->
+      <p>A 23-year-old woman identified as A.J. was tragically killed and a 24-year-old man was critically injured by a driver under the influence of drugs on Wednesday, Dec. 8 in Manhadden. 
+        <br></br>
+        All wounded have been sent to the hospital. </p>
+        <p class="small-text" style="padding:0;margin: 0; font-size: 1rem; bottom: 5%;position: absolute; left: 50%; transform: translate(-50%,0);">return to close</p>
+    </div>
+
+    <img src='https://zhouq743.github.io/project2/images/boy.png' id='boy2'>    
+  </div>
+
+  <div id="instruction">
+    <h2>instruction</h2>
+    <p><span>&#8592;</span><span>&#8593;</span><span>&#8594;</span><span>&#8595;</span> move</p>
+    <p><span>F</span> Get items</p>
+    <p><span>Q</span> Open my Bag </p>
+    <p><span>M</span> Open mission book </p>
+    <!-- <p style="text-align: left;"><small>*click &#128092; to see items</small></p> -->
+    <p class="small-text" style="padding:0;">return to close</p>
+  </div>
+
+  <div id="mission-card">
+    <h2>Mission</h2>
+    <p class="mission-text">1. find cookies for angelina</p>
+    <p class="mission-text" id="mission2" style="display: none;">2. find the enchanted sword</p>
+    <p class="mission-text" id="mission3" style="display: none;">3. save the girl</p>
+    <div id="puzzle">
+      <img src="./images/sword-blank.png" style="height: 40vh; grid-area: 1/1/2/2;">
+      <img src="./images/sword1.png" style="height: 40vh; grid-area: 1/1/2/2; display: none;" id="sword-piece1">
+      <img src="./images/sword2.png" style="height: 40vh; grid-area: 1/1/2/2; display: none;" id="sword-piece2">
+      <img src="./images/sword3.png" style="height: 40vh; grid-area: 1/1/2/2; display: none;" id="sword-piece3">
+      <img src="./images/sword4.png" style="height: 40vh; grid-area: 1/1/2/2; display: none;" id="sword-piece4">
+    </div>
+    <p class="small-text" style="padding:0;">return to close</p>
+  </div>
+
+  <div class='dialog-container' id="intro-conv">
+    <img id='speaking-img3' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text3">Forgive me angelina</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+  <div class='dialog-container' id="bear-conv">
+    <img id='speaking-img' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text">dialog-text...</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+  <div class='dialog-container' id="girl-conv">
+    <img id='speaking-img2' src="./images/girl-conv.png">
+    <div class="bottom-text">
+      <p id="dialog-text2">.</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+  <div class='dialog-container' id="dessert-conv">
+    <img id='speaking-img4' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text4">The place is cursed. I have to find an enchanted weapon first.</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+  <div class='dialog-container' id="time-conv">
+    <img id='speaking-img5' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text5">I have to be quick. I can't leave angelina alone for so long.<br><span>Time remaining: 4 min</span></p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+
+  <div class="obtained" id="bread-card">
+    <img src="./images/bread.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>Rotted bread</h3>
+    <p style="font-size: 1.2rem;">IT’S POINSONOUS</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="chain-card">
+    <img src="./images/chain.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>Chainsaw</h3>
+    <p style="font-size: 1.2rem;">it has "ted" on it</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="heart-card">
+    <img src="./images/heart.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>Bleeding heart</h3>
+    <p style="font-size: 1.2rem;">my heart hurts too</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="tear-card">
+    <img src="./images/potion.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>Girl's tear</h3>
+    <p style="font-size: 1.2rem;">I wish she never cried</p>
+    <p style="font-size: 1.2rem; color: red;">*usable item</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="sword1-card">
+    <img src="./images/sword1.png" style="height: 20vw; justify-self: center; align-self: center; margin-top: 1vh;">
+    <h3>sword piece</h3>
+    <p style="font-size: 1.2rem;">no1 /4</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="sword2-card">
+    <img src="./images/sword2.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>sword piece</h3>
+    <p style="font-size: 1.2rem;">no2 /4</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="sword3-card">
+    <img src="./images/sword3.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>sword piece</h3>
+    <p style="font-size: 1.2rem;">no3 /4</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="sword4-card">
+    <img src="./images/sword4.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>sword piece</h3>
+    <p style="font-size: 1.2rem;">no4 /4</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class="obtained" id="zombie-card">
+    <img src="./images/zombie.png" style="height: 20vw; justify-self: center; align-self: center; margin-top: 1vw;">
+    <h3 style="font-size: 1.5rem; text-align: center;">Ending 0/3 ???</h3>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);">return to play again</p>
+  </div>
+  <div class="obtained" id="ladder-card">
+    <img src="./images/ladder.png" style="height: 20vw; justify-self: center; align-self: center;">
+    <h3>Magic ladder</h3>
+    <p style="font-size: 1.2rem;">Find another way out</p>
+    <p style="justify-self: end; align-self: center; transform: translate(0,3vw);"><span>Q</span> Open my Bag </p>
+  </div>
+  <div class='obtained' id="keyboard" style="opacity: 1; height: 35vw; gap: 1.5vw; display: none;">
+    <div style="align-self: center; display: flex; gap: 1vw; width: 11vw; margin-top: 2vw; font-size: 2rem;">
+      <p class="digit" id="digit1">&nbsp;</p>
+      <p class="digit" id="digit2">&nbsp;</p>
+      <p class="digit" id="digit3">&nbsp;</p>
+      <p class="digit" id="digit4">&nbsp;</p>
+    </div>
+    <div class="number">
+      <span class='number-key' data-number="1">1</span>
+      <span class='number-key' data-number="2">2</span>
+      <span class='number-key' data-number="3">3</span>
+      <span class='number-key' data-number="4">4</span>
+      <span class='number-key' data-number="5">5</span>
+      <span class='number-key' data-number="6">6</span>
+      <span class='number-key' data-number="7">7</span>
+      <span class='number-key' data-number="8">8</span>
+      <span class='number-key' data-number="9">9</span>
+      <span class='number-key' data-number="0" style="grid-column: 2/3;">0</span>
+    </div>
+    <p style="text-align: center; color: red; font-size: 1.5rem;">Only the time knows true or false</p>
+    <p class='small-text' style="text-align: end; font-size: 1rem;">
+      Press number keys to fill<br>
+      >> return to exit</p>
+  </div>
+
+  <div id="my-bag">
+    <h2>My pocket</h2>
+    <div class='item-container' id="chain-container">
+      <img src="./images/chain.png">
+      <h4>Chainsaw</h4>
+      <p class="description">it has "ted" on it</p>
+    </div>
+    <div class='item-container' id="bread-container">
+      <img src="./images/bread.png">
+      <h4>Rotted bread</h4>
+      <p class="description">it's poisonous</p>
+    </div>
+    <div class='item-container' id="heart-container">
+      <img src="./images/heart.png">
+      <h4>Bleeding heart</h4>
+      <p class="description">my heart hurts too</p>
+    </div>
+    <div class='item-container' id="potion-container" style="cursor: pointer;">
+      <img src="./images/potion.png">
+      <h4>Girl's tear</h4>
+      <p class="description">I wish she never cried</p>
+    </div>
+    <div class='item-container' id="sword1-container">
+      <img src="./images/sword1.png">
+      <h4>sword piece</h4>
+      <p class="description">no1 /4</p>
+    </div>
+    <div class='item-container' id="sword2-container">
+      <img src="./images/sword2.png">
+      <h4>sword piece</h4>
+      <p class="description">no2 /4</p>
+    </div>
+    <div class='item-container' id="sword3-container">
+      <img src="./images/sword3.png">
+      <h4>sword piece</h4>
+      <p class="description">no3 /4</p>
+    </div>
+    <div class='item-container' id="sword4-container">
+      <img src="./images/sword4.png">
+      <h4>sword piece</h4>
+      <p class="description">no4 /4</p>
+    </div>
+    <div class='item-container' id="sword-container">
+      <img src="./images/sword.png">
+      <h4>enchanted sword</h4>
+      <p class="description">rip</p>
+    </div>
+    <div class='item-container' id="ladder-container">
+      <img src="./images/ladder.png">
+      <h4>magic Ladder</h4>
+      <p class="description">another way out</p>
+    </div>
+    <p class="small-text" style="margin: 2vh;">enter to close</p>
+  </div>
+
+  <div id="control-pannel">
+    <p id="open-in">?</p>
+    <img src="./images/soundon.png" id="sound">
+  </div>
+
+  <div style="position:absolute; right: 1vw;top: 0vw;text-align: end; font-size: 1.5rem;">
+    <!-- <p id="mission" class="light2">Mission: find food for angelina</p> -->
+    <p id="open-m" style="color: white;"><span style="padding: 0.4vw;
+    border: 1px solid white;">M</span> mission book</p>
+    <p style="color: white; 
+    margin: 1vw; "><span style="padding: 0.4vw;
+    border: 1px solid white;">Q</span> my bag</p>
+  </div>
+
+  <div id="age">
+    <p id="age-17">I'm 17+</p>
+    <p id="age-17n">I'm not yet 17</p>
+    <span style="font-size: 1.5rem; margin: 5px; display: none;">hey there! this is a 17+ only game. come again next time!</span>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

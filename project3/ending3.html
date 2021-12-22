@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ending3.css" />
+  <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <title>Ted</title>
+</head>
+
+<body>
+  <audio id="myAudio" autoplay loop><source src="./sad.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <audio id="hos-sound" loop><source src="./hospital.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <div id="trash" style="display: none;"></div>
+
+  <div class="container" id="dessert-container">
+    <img class="bg-img" src="./images/dessertshop.png" id="dessert-img">
+    <img src="./images/ghost.png" id="ghost">
+    <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4f11926f5fcfde1.png" id="blood1">
+    <img src="https://art.pixilart.com/daa9728e2b312a6.png" id="blood">
+    <img src="./images/boy.png" id="boy">
+
+  </div>
+
+  <div id="hospital-container" style="display: none; overflow: hidden;">
+    <img src="./images/hos2.png" class="bg-img" id="clinic">
+    <div id="eyelid" class="eyes-up"></div>
+    <div id="eyelid2" class="eyes-down"></div>
+    <svg width="0" height="0">
+      <defs><clipPath id="myCurve" clipPathUnits="objectBoundingBox">
+      <path
+        d="M 0,1
+              L 0,0
+              L 1,0
+              L 1,1
+              C .65 .8, .35 .8, 0 1
+              Z"
+      />
+    </clipPath></defs></svg>
+    <img src="./images/hand.gif" id="gif">
+  </div>
+
+  <div class='dialog-container' id="intro-conv" style="display: none;">
+    <img id='speaking-img3' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text3">Darlin why are you here? did anything hurt you?</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+
+  <div class='dialog-container' id="hos-conv" style="display: none;">
+    <img id='speaking-img4' src="./images/doctor2.png">
+    <div class="bottom-text">
+      <p id="dialog-text4">Mr. wilson. the patient wounded in the car accident. his vital signs are stable now.</p>
+      <p class='continue' id="continues">>> return to Continue</p>
+    </div>
+  </div>
+
+  <div class="sun-container" style="display: none;">
+    <div class="sun"></div>
+    <div class="lines"></div>
+  </div>
+  <div class="ocean" style="display: none;">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <div id="caption">
+    <p>From then on,</p>
+    <p>My life is "back on track"</p>
+    <p>just as she wished.</p>
+    <p>but oftentimes she still appears in my dreams</p>
+    <p>There's a feeling that she never truly disappears.</p>
+    <p>I have to go back to that place and save her...</p>
+    <p style="color: red;">Ending 3/3 Survivor</p>
+  </div>
+  
+
+  <div id="control-pannel">
+    <img src="./images/soundon.png" id="sound">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./ending3.js"></script>
+</body>
+</html>

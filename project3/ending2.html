@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="ending2.css" />
+  <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <title>Ted</title>
+</head>
+
+<body>
+  <audio id="myAudio" autoplay loop><source src="./sad.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <audio id="hos-sound" loop><source src="./hospital.mp3" type="audio/mpeg">Please update your browser does not support the audio element.</audio>
+  <div id="trash" style="display: none;"></div>
+
+  <div class="container" id="dessert-container">
+    <img class="bg-img" src="./images/dessertshop.png" id="dessert-img">
+    <img src="./images/blood1.png" id="blood">
+    <img src="./images/ghost.png" id="ghost">
+    <img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4f11926f5fcfde1.png" id="blood1">
+    <img src="./images/boy.png" id="boy">
+
+  </div>
+
+  <div class="container" id="hospital-container" style="display: none;">
+    <img src="./images/clinic.png" class="bg-img">
+  </div>
+
+  <div class='dialog-container' id="intro-conv" style="display: none;">
+    <img id='speaking-img3' src="./images/dialog-boy.png">
+    <div class="bottom-text">
+      <p id="dialog-text3">Darlin, what happened to you?</p>
+      <p class='continue'>>> return to Continue</p>
+    </div>
+  </div>
+
+  <div class='dialog-container' id="hos-conv" style="display: none;">
+    <img id='speaking-img4' src="./images/doctor2.png">
+    <div class="bottom-text">
+      <p id="dialog-text4">Mr. Kaysen. unfortunately the patient wounded in the car accident has gone...</p>
+      <p class='continue' id="continues">>> return to Continue</p>
+    </div>
+  </div>
+
+  <img src="./images/fight-scene.png" id="fight">
+
+  <div id="control-pannel">
+    <img src="./images/soundon.png" id="sound">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./ending2.js"></script>
+</body>
+</html>
