@@ -2,8 +2,13 @@ $("#start").click(function () {
   $("#container").fadeOut(1);
   $("#part1").fadeIn(1);
   document.querySelector("#part1").play();
+  window.open("https://vimeo.com/755383481", "_blank");
 });
 document.querySelector("#part1").addEventListener("ended", function () {
+  document.querySelector("#part1").style.display = "none";
+  $("#later").css("display", "flex");
+});
+document.querySelector("#part1").addEventListener("click", function () {
   document.querySelector("#part1").style.display = "none";
   $("#later").css("display", "flex");
 });
