@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Optima Pro";
+  /* src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; */
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #E5DDC6;
+}
+body {
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  /* color: #e9e1cd; */
+}
+#chapter-title {
+  display: none;
+  position: absolute;
+  font-family: optima pro;
+  font-weight: 200;
+  color:#563316;
+  font-size: 5rem;
+  text-align: center;
+  width: 100vw;
+  top: 10vh;
+}
+.small-title {
+  font-size: 1rem !important;
+  top: 0vh !important;
+  text-align: left !important;
+  cursor: pointer;
+}
+/*------splash--------*/
+#splash {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-top: 15vh;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  gap: 0vh;
+}
+#splash-watering {
+  display: grid;
+  opacity: 0;
+}
+#splash-image-1 {
+  width: 15vw;
+}
+#splash-image-2 {
+  width: 20vw;
+  transform-origin: top left;
+  grid-area: 1/1/2/2;
+}
+.splash-rotate {
+  transform: rotate(46.61deg); 
+}
+#splash-image-3 {
+  width: 33vw;
+  opacity: 0;
+  grid-area: 1/1/2/2;
+  transform: translate(-10vw, 0vh);
+}
+#splash-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 10vw;
+  display: none;
+  cursor: pointer;
+}
+/*------splash--------*/
+
+/*------howto--------*/
+#howto {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  z-index: 100 !important;
+}
+.later-how {
+  background-color: rgba(0,0,0,0.6);
+}
+#instruction-board {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-container {
+  position: absolute;
+  width: 65vw;
+  height: 36vw;
+  top: 8vw;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-image {
+  position: absolute;
+  max-width: 40%;
+  max-height: 20vw;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#instruction-button {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  bottom: 10%;
+  cursor: pointer;
+}
+#instruction-step {
+  width: 5%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-back {
+  width: 5%;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  display: none;
+  cursor: pointer;
+}
+/*------howto--------*/
+
+/*------game--------*/
+#game {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3A200F;
+  display: none;
+}
+#game-background-pattern {
+  width: 100vw;
+  height: 100vh;
+}
+#holes-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 70vw;
+  height: 40vw;
+}
+.hole {
+  max-width: 15%;
+  max-height: 7vw;
+  position: absolute;
+}
+.hole-image {
+  width: 100%;
+}
+.need-water,.success,.fail {
+  display: none;
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%,-80%);
+}
+.need-water {
+  /* display: block; */
+  left: 50%;
+  top: -100%;
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.sapling {
+  display: none;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-20%);
+}
+#sapling-5 {
+  width: 80%;
+}
+#hole-1 {
+  width: 13%;
+  left: 15%;
+  top: 25%;
+}
+#hole-2 {
+  left: 0%;
+  bottom: 5%;
+}
+#hole-3 {
+  right: 5%;
+  bottom: 5%;
+}
+#hole-4 {
+  width: 13%;
+  right: 20%;
+  top: 20%;
+}
+#hole-5 {
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,-50%);
+}
+#watering-can {
+  width: 10vw;
+  height: 5vw;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+#bottle {
+  width: 60%;
+  height: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background: #E5DDC6;
+  border-radius: 1vw;
+}
+#handle {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  border: .5vw solid #6E7325;
+  border-radius: 50%;
+  bottom: 10%;
+  left: 5%;
+}
+#gaizi {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6E7325;
+  width: 8%;
+  height: 20%;
+  border-radius: 50%;
+  bottom: 70%;
+}
+#huzui {
+  position: absolute;
+  width: 5%;
+  height: 60%;
+  bottom: 5%;
+  right: 2%;
+  background: #6E7325;
+  transform-origin: top right;
+  transform: rotate(38deg);
+}
+#water {
+  width: 100%;
+  height: 40%;
+  background: #31789F;
+  position: absolute;
+  border-radius: 1vw;
+  bottom: 0;
+}
+.while-game {
+  /* border: 1px solid blue; */
+  width: 80% !important;
+  height:  80% !important;
+  top: 50%;
+  left: 50% !important;
+  transform: translate(-50%,-50%);
+}
+.while-game #handle {
+  border: 3vw solid #6E7325;
+}
+.while-game #gaizi {
+  width: 4%;
+  height: 10%;
+  bottom: 75%;
+}
+.while-game #huzui {
+  right: 5%;
+}
+.while-game #water {
+  height: 0;
+}
+#success-bar {
+  position: absolute;
+  height: 2%;
+  background-color: #FB5824;
+  width: 10%;
+  display: none;
+}
+#mouse {
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  width: 3vw;
+  transform: rotate(-45deg);
+  display: none;
+}
+.mouse-hover {
+  animation: blink-animation 2s infinite;
+  -webkit-animation-: blink-animation 2s infinite;
+}
+@keyframes blink-animation {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes blink-animation {
+  0% {opacity: 1;}
+  50% {opacity: 1;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#help {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  width: 4%;
+  cursor: pointer;
+}
+/*------game--------*/
+
+/* nav */
+#navigation-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100 !important;
+  background-color: rgba(0,0,0,0.6);
+}
+#timeline {
+  max-height:90vh;
+  grid-area: 1/1/2/2;
+}
+#nav-items-container {
+  height:75vh;
+  width: 8vh;
+  grid-area: 1/1/2/2;
+  display: grid;
+  /* border: 1px solid red; */
+  transform: translateX(42vh);
+  grid-template-rows: 8% 40% 23% 21% 8%;
+}
+#nav-items-container img {
+  max-height: 6vh;
+}
