@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Optima Pro";
+  /* src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; */
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #E5DDC6;
+  font-family: optima pro;
+}
+body {
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  /* color: #e9e1cd; */
+}
+#chapter-title {
+  display: none;
+  position: absolute;
+  font-weight: 200;
+  color:#563316;
+  font-size: 5rem;
+  text-align: center;
+  width: 100vw;
+  top: 10vh;
+}
+.small-title {
+  font-size: 1rem !important;
+  top: 0vh !important;
+  text-align: left !important;
+  z-index: 25;
+}
+/*------splash--------*/
+#splash {
+  width: 100vw;
+  height: 93vh;
+  margin: 3vh;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+#button {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%,-50%);
+  width: 3vw;
+  display: none;
+  cursor: pointer;
+}
+#mouse {
+  position: absolute;
+  left: 53%;
+  top: 31%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 3vw;
+  display: none;
+  animation: blink-animation 2s infinite;
+}
+#mouse2 {
+  width: 3vw;
+  transform: rotate(-45deg) translate(1vw,3.5vw);
+  animation: blink-animation 2s infinite;
+  grid-area: 1/1/2/2;
+}
+#mouse3 {
+  width: 3vw;
+  transform: rotate(-45deg);
+  animation: blink-animation 2s infinite;
+  position: absolute;
+  left: 75%;
+  bottom: 5%;
+  display: none;
+}
+#hungry {
+  width: 10vw;
+  position: absolute;
+  animation: sudden .5s;
+  animation-iteration-count: 2;
+  left: 65%;
+  bottom: 5%;
+  cursor: pointer;
+  display: none;
+}
+#later div {
+  display: none;
+}
+.blink {
+  animation: blink-animation 2s infinite;
+}
+@keyframes fadein {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes blink-animation {
+0% {opacity: 1;}
+50% {opacity: 1;}
+75% {opacity: 0;}
+100% {opacity: 1;}
+}
+@keyframes sudden {
+  0% {opacity: 1;}
+  25% {opacity: 1;}
+  55% {opacity: 0;}
+  75% {opacity: 1;}
+  100% {opacity: 1;}
+}
+.fadein{
+  animation:fadein 1s;
+  animation-fill-mode: forwards;
+}
+#splash-image-1 {
+  max-width: 40vw;
+  max-height: 30vh;
+  order: 2;
+  /* position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,0%); */
+}
+#bubble-container {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  justify-content: flex-end;
+}
+#images-container {
+  border: 5px solid #563316;
+  background-color: white;
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw;
+  opacity: 0;
+  transition: 1s;
+}
+.stage-2 {
+  opacity: 1 !important;
+  flex-direction: row !important;
+}
+#previous,#later {
+ display: none;
+}
+.stage-1 {
+  display: none !important;
+}
+.stage-2 #previous, .stage-2 #later {
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+}
+.stage-2 div img {
+  align-self: center;
+}
+#previous .cactus {
+  width: 20vw;
+}
+#previous .hearts {
+  opacity: 0;
+}
+#arrow {
+  display: none;
+  opacity: 0;
+  width: 5vw;
+  margin: 3vw;
+}
+#later .cactus {
+  opacity: 0;
+  width: 10vw;
+}
+#later .hearts {
+  cursor: pointer;
+  grid-area: 1/1/2/2;
+}
+.hearts {
+  width: 3vw;
+}
+.sad-filter {
+  filter: grayscale(1) blur(1px);
+}
+#bubble1 {
+  border: 5px solid #563316;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: white;
+  display:none;
+}
+#bubble2 {
+  border: 5px solid #563316;
+  background-color: white;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  display:none;
+}
+#disappear{
+  max-width: 10vw;
+  max-height: 8vh;
+}
+#disappear2{
+  max-width: 48vw;
+  max-height: 40vh;
+}
+#food-container {
+  display: flex;
+  gap: 5vw;
+  display: none;
+}
+#food-container img {
+  max-width: 8vw;
+  align-self: center;
+  animation:fadein 1s;
+  animation-fill-mode: forwards;
+}
+.larger {
+  max-width: 9vw !important;
+}

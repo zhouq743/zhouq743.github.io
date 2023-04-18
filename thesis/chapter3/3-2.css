@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "Optima Pro";
+  /* src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; */
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #3A200F;
+  font-family: optima pro;
+}
+body {
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  /* color: #e9e1cd; */
+}
+#chapter-title {
+  display: none;
+  position: absolute;
+  font-weight: 200;
+  color:#563316;
+  font-size: 5rem;
+  text-align: center;
+  width: 100vw;
+  top: 10vh;
+}
+.small-title {
+  font-size: 1rem !important;
+  top: 0vh !important;
+  text-align: left !important;
+  z-index: 25;
+}
+/*------splash--------*/
+
+#splash {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left:0;
+  position: absolute;
+}
+#snail {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 5%;
+  top: 5%;
+  transition: 2s;
+}
+.snail-pos1 {
+  transform: translate(20vw, 40vh);
+}
+.snail-pos2 {
+  animation: turn1 2s;
+  animation-fill-mode: forwards;
+  /* transform: translate(20vw, 40vh) scaleX(-1);  */
+}
+.snail-seasons {
+  display: block;
+  animation: snail-seasons 9s;
+  animation-fill-mode: forwards;
+}
+@keyframes turn1 {
+  0%{transform: translate(20vw, 40vh)}
+  5%{transform: translate(20vw, 40vh) scaleX(-1)}
+  100% {transform: translate(0, 75vh) scaleX(-1);}
+}
+@keyframes snail-seasons {
+  0%{transform: none}
+  33.3%{transform: translate(70vw, 10vh) scaleX(1)}
+  66.7% {transform: translate(60vw, 70vh) scaleX(1);}
+  67% {transform: translate(60vw, 70vh) scaleX(-1);}
+  100% {transform: translate(0vw, 75vh) scaleX(-1);}
+}
+#snail-image{
+  position: absolute;
+  width: 100%;
+}
+#lug-image {
+  width: 4vw;
+  position: absolute;
+  bottom: 0;
+}
+#food-speech {
+  display: none;
+  width: 10vw;
+  position: absolute;
+  left: 100%;
+  transform: translateY(-100%);
+}
+#selections {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  width: 35%;
+  height: 30%;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+#selections img {
+  width: 8vw;
+  cursor: pointer;
+  display: none;
+}
+#trash-can {
+  position: absolute;
+  width: 10vw;
+  right: 5%;
+  top: 5%;
+  display: none;
+  transition: 2s;
+}
+@keyframes throwtrash {
+  from {transform: translate(0);}
+  to {transform: translate(20vw,-35vh) rotate(2160deg);}
+}
+@keyframes summertrash {
+  0% {transform: translate(20vw,-35vh) rotate(2160deg);}
+  33% {transform: translate(22vw,-36vh) rotate(2160deg) scale(1.2);}
+  66.7% {transform: translate(22vw,-36vh) rotate(2160deg) scale(1.5);}
+  100%{transform: translate(22vw,-36vh) rotate(2160deg) scale(2.4);}
+}
+#trash-bag {
+  display: none;
+  position: absolute;
+  width: 8vw;
+  right: 30%;
+  top: 50%;
+}
+.throw-trash {
+  animation: throwtrash 2s;
+  animation-fill-mode: forwards;
+}
+.summertrash {
+  animation: summertrash 9s;
+  animation-fill-mode: forwards;
+}
+.springtrash {
+  transform: translate(20vw,-35vh) rotate(2160deg);
+}
+#button {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  transform: translate(-50%,-50%);
+  width: 3vw;
+  display: none;
+  cursor: pointer;
+  animation: blink-animation 2s infinite;
+}
+.blink {
+  animation: blink-animation 2s infinite;
+}
+@keyframes fadein {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes blink-animation {
+0% {opacity: 1;}
+50% {opacity: 1;}
+75% {opacity: 0;}
+100% {opacity: 1;}
+}
+.fadein{
+  animation:fadein 1s;
+  animation-fill-mode: forwards;
+}
+#splash-image-1 {
+  max-width: 40vw;
+  max-height: 30vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#bubble-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(-50% - 30vh));
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  justify-content: flex-start;
+  animation:fadein 1s;
+  animation-fill-mode: forwards;
+}
+#bubble1 {
+  border: 5px solid #E5DDC6;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: white;
+  /* display:none; */
+}
+#bubble2 {
+  border: 5px solid #E5DDC6;
+  background-color: white;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  /* display:none; */
+}
+#images-container {
+  border: 5px solid #E5DDC6;
+  background-color: white;
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw;
+  /* opacity: 0; */
+  transition: 1s;
+}
+#food-container {
+  display: flex;
+  gap: 5vw;
+  /* display: none; */
+}
+#food-container img {
+  max-width: 5vw;
+  align-self: center;
+}
+.seasons {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+#howto {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  position: absolute;
+  z-index: 100 !important;
+  background-color: rgba(58,32,15,0.6);
+}
+#instruction-board {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-container {
+  position: absolute;
+  width: 65vw;
+  height: 36vw;
+  top: 8vw;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-button {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  bottom: 10%;
+  cursor: pointer;
+}
+#instruction-container p {
+  text-align: center;
+  font-size: 5rem;
+}
+#selections2 {
+  position: absolute;
+  width: 100%;
+  max-height: 20vw;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: hidden;
+  display: flex;
+}
+#selections2 img {
+  height: 20vw;
+  cursor: pointer;
+}
+#no-frame {
+  position: absolute;
+  max-width: 30%;
+  max-height: 20vw;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1vw;
+}
