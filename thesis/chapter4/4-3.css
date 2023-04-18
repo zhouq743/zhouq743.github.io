@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Optima Pro";
+  /* src: url("slkscr-webfont.eot");
+  src: url("slkscr-webfont.eot?#iefix") format("embedded-opentype"),
+    url("slkscr-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; */
+}
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #E5DDC6;
+  font-family: optima pro;
+}
+body {
+  overflow: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  /* color: #e9e1cd; */
+}
+@keyframes skew {
+  0% { transform: skew(5deg, 5deg) rotate(0deg) translate(-50%,-20%); }
+  10% { transform: skew(-5deg, -10deg) rotate(-1deg) translate(-50%,-20%); }
+  20% { transform: skew(-15deg, 0deg) rotate(1deg) translate(-50%,-20%); }
+  30% { transform: skew(15deg, 10deg) rotate(0deg) translate(-50%,-20%); }
+  40% { transform: skew(5deg, -5deg) rotate(1deg) translate(-50%,-20%); }
+  50% { transform: skew(-5deg, 10deg) rotate(-1deg) translate(-50%,-20%); }
+  60% { transform: skew(-15deg, 5deg) rotate(0deg) translate(-50%,-20%); }
+  70% { transform: skew(15deg, 5deg) rotate(-1deg) translate(-50%,-20%); }
+  80% { transform: skew(-5deg, -5deg) rotate(1deg) translate(-50%,-20%); }
+  90% { transform: skew(5deg, 10deg) rotate(0deg) translate(-50%,-20%); }
+  100% { transform: skew(5deg, -10deg) rotate(-1deg) translate(-50%,-20%); }
+}
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  60%{
+    transform: scale(1.1);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  80%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.skew {
+  animation: skew 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shaking {
+  cursor: pointer;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+#chapter-title {
+  /* display: none; */
+  position: absolute;
+  font-weight: 200;
+  color:#563316;
+  width: 100vw;
+  top: 10vh;
+  font-size: 1rem !important;
+  top: 0vh !important;
+  text-align: left !important;
+  cursor: pointer;
+}
+/*------splash--------*/
+#splash {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+#cage {
+  max-width: 40vw;
+  max-height: 50vh;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+#cloud {
+  position: absolute;
+  max-width: 50vw;
+  max-height: 50vh;
+  right: 50%;
+  bottom: 50%;
+  display: none;
+}
+.wants {
+  max-width: 30%;
+  max-height: 30vh;
+  position: absolute;
+  bottom: 60%;
+  display: none;
+  z-index: 1;
+}
+#want-cactus {
+  right: 60%;
+}
+#wantu {
+  left: 60%; 
+}
+
+/* scene2 */
+#holes-container {
+  display: none;
+  background-color: #3A200F;
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+#game-background-pattern {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.hole {
+  max-width: 13%;
+  max-height: 7vw;
+  position: absolute;
+}
+.hole-image {
+  width: 100%;
+}
+
+#hole-1 {
+  left: 15%;
+  top: 30%;
+}
+#hole-2 {
+  left: 20%;
+  bottom: 10%;
+}
+#hole-3 {
+  right: 15%;
+  bottom: 20%;
+}
+#hole-4 {
+  width: 10%;
+  right: 25%;
+  top: 30%;
+}
+#hole-5 {
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+}
+.cactus {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#cactus-3 {
+  width: 70%;
+  transform: translate(-50%,-75%);
+}
+#cactus-4 {
+  width: 100%;
+}
+#cactus-5 {
+  width: 200%;
+  transform: translate(-50%,-55%);
+}
+.name-tags {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%,0%);
+}
+#name-5 {
+  top: 70%;
+}
+#letter-container, #present-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(229,221,198,0.6);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#letter, #present{
+  max-width: 70%;
+  max-height: 80vh;
+}
+.opened-letter, .opened-present {
+  max-height: 95vh !important;
+}
+#letterinside, #presentinside {
+  display: none;
+  max-height: 80vh;
+}
+/* seasons */
+.snail-seasons {
+  display: block;
+  animation: snail-seasons 9s;
+  animation-fill-mode: forwards;
+}
+@keyframes snail-seasons {
+  0%{transform: none}
+  33.3%{transform: translate(70vw, 10vh) scaleX(1)}
+  66.7% {transform: translate(60vw, 70vh) scaleX(1);}
+  67% {transform: translate(60vw, 70vh) scaleX(-1);}
+  100% {transform: translate(0vw, 75vh) scaleX(-1);}
+}
+#seasons-container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left:0;
+  position: absolute;
+  background-color: #3A200F;
+}
+.seasons {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+#snail {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 5%;
+  top: 5%;
+  transition: 2s;
+}
+#splash-image-1 {
+  max-width: 40vw;
+  max-height: 30vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transition: 1s;
+  transform: translate(-50%,-50%);
+  transform-origin: top left;
+}
+
+/* scene3 */
+#howto {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #E5DDC6;
+  display: none;
+  position: absolute;
+}
+#instruction-board {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+#instruction-container {
+  position: absolute;
+  width: 65vw;
+  height: 36vw;
+  top: 8vw;
+  left: 50%;
+  transform: translate(-50%,0%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 3vh;
+}
+#instruction-container p {
+  text-align: center;
+}
+#instruction-title {
+  /* position: absolute; */
+  max-width: 40%;
+  max-height: 10vw;
+  align-self: center;
+  /* top: 5%;
+  left: 50%;
+  transform: translate(-50%,0%); */
+}
+#instruction-image {
+  /* position: absolute; */
+  max-width: 50%;
+  max-height: 25vw;
+  align-self: center;
+  /* top: 10%;
+  left: 50%;
+  transform: translate(-50%,0%); */
+}
+#instruction-button {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0%);
+  bottom: 10%;
+  cursor: pointer;
+}
+.image-upload>input {
+  display: none;
+}
+/* upload */
+#upload-out {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #E5DDC6;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+#upload-title {
+  width: 30vw;
+  transition: 1s;
+}
+#upload-title {
+  justify-self: center;
+  align-self: center;
+}
+output{
+  width: 40vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  border-radius: 5px;
+}
+output .image{
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+output .image img{
+  height: 100%;
+  width: 100%;
+}
+output .image span {
+  display: none;
+}
+#cactus-box {
+  position: absolute;
+}
+#cactus-box img {
+  position: absolute;
+  width: 35%;
+  display: none;
+}
+
+/* nav */
+#navigation-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 100 !important;
+  background-color: rgba(0,0,0,0.6);
+}
+#timeline {
+  max-height:90vh;
+  grid-area: 1/1/2/2;
+}
+#nav-items-container {
+  height:75vh;
+  width: 8vh;
+  grid-area: 1/1/2/2;
+  display: grid;
+  /* border: 1px solid red; */
+  transform: translateX(42vh);
+  grid-template-rows: 8% 40% 23% 21% 8%;
+}
+#nav-items-container img {
+  max-height: 6vh;
+}

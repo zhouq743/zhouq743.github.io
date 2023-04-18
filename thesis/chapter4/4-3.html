@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../font/stylesheet.css" rel="stylesheet">
+  <link rel="preload" href="../font/OptimaLTPro-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="4-3.css" />
+  <!-- <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+  <title>Apr 2026</title>
+</head>
+<body>
+  <!-- --------splash--------- -->
+  <section id="splash">
+    <img id="cloud" src="./4-3-images/cloud.png">
+    <img id="cage" src="./4-3-images/cage.png">
+    <img id="want-cactus" src="./4-3-images/want-cactus.png" class="wants shaking">
+    <img id="wantu" src="./4-3-images/wantu.png" class="wants shaking">
+  </section>
+
+  <div id="holes-container">
+    <img src="../images/soil-pattern.png" id="game-background-pattern">
+    <div class="hole" id="hole-1">
+      <img src="../images/hole1.png" id="hole-image-1" class="hole-image">
+      <img src="../images/cactus1.png" class="cactus" id="cactus-1">
+      <img src="../chapter2/2-2-image/2-2-3/nametag4.png" class="name-tags" id="name-1">
+    </div>
+    <div class="hole" id="hole-2">
+      <img src="../images/hole2.png" id="hole-image-2" class="hole-image">
+      <img src="../images/cactus2.png" class="cactus" id="cactus-2">
+      <img src="../chapter2/2-2-image/2-2-3/nametag2.png" class="name-tags" id="name-2">
+    </div>
+    <div class="hole" id="hole-3">
+      <img src="../images/hole3.png" id="hole-image-3" class="hole-image">
+      <img src="../images/cactus3.png" class="cactus" id="cactus-3">
+      <img src="../chapter2/2-2-image/2-2-3/nametag1.png" class="name-tags" id="name-3">
+    </div>
+    <div class="hole" id="hole-4">
+      <img src="../images/hole4.png" id="hole-image-4" class="hole-image">
+      <img src="../images/cactus4.png" class="cactus" id="cactus-4">
+      <img src="../chapter2/2-2-image/2-2-3/nametag3.png" class="name-tags" id="name-4">
+    </div>
+    <div class="hole" id="hole-5">
+      <img src="../images/hole5.png" id="hole-image-5" class="hole-image">
+      <img src="../images/golden-unhappy.png" class="cactus" id="cactus-5">
+      <img src="../chapter2/2-2-image/2-2-3/nametag5.png" class="name-tags" id="name-5">
+    </div>
+  </div>
+  <div id="letter-container">
+    <img src="./4-3-images/letter.png" id="letter">
+    <img src="./4-3-images/letter0.png" id="letterinside">
+  </div>
+  <div id="present-container">
+    <img src="./4-3-images/present.png" id="present">
+    <img src="./4-3-images/gift0.png" id="presentinside">
+  </div>
+  <!-- --------splash--------- -->
+
+  <div id="seasons-container">
+    <img class="seasons" src="../chapter3/3-2-images/spring.png">
+    <img class="seasons" src="../chapter3/3-2-images/summer.png" style="display: none;">
+    <img class="seasons" src="../chapter3/3-2-images/fall.png" style="display: none;">
+    <img class="seasons" src="../chapter3/3-2-images/winter.png" style="display: none;">
+      <img src="../chapter2/2-2-image/2-2-3/snail.png" id="snail">
+    <img id="splash-image-1" src="./4-3-images/cactus0.png">
+  </div>
+  <!-- --------instruction----------->
+  <section id="howto">
+    <img src="../images/board.png" id="instruction-board">
+    <div id="instruction-container">
+      <img src="./4-3-images/invitation.png" id="instruction-title">
+      <img src="../images/golden-unhappy.png" id="instruction-image">
+      <p>*You may take a picture of your current room and Airdrop/email to yourself</p>
+      <div class="image-upload">
+        <label for="file-input">
+          <img src="../chapter4/4-3-images/upload-button.png" id="instruction-button"/>
+        </label>
+        <input id="file-input" type="file" accept="image/jpeg, image/png, image/jpg"/>
+      </div>
+    </div>
+  </section>
+  <!-- --------instruction----------->
+
+  <div id="upload-out">
+      <img src="./4-3-images/invitation.png" id="upload-title">
+      <p style="text-align: center;">*where do you want me to live?</p>
+    <output>
+    </output>
+    <div id="cactus-box">
+      <img src="../images/healthy-golden.png" id="healthy-golden">
+    </div>
+  </div>
+
+
+  <p id="chapter-title">Apr 2026</p>
+
+  <!-- --------nav----------->
+  <section id="navigation-container">
+    <img src="../images/timeline.png" id="timeline">
+    <div id="nav-items-container">
+      <img src="../chapter2/2-1-image/2-1-1/watering-can.png" id="nav-item-1" class="nav-item">
+      <img src="../chapter2/2-2-image/2-2-3/snail.png" class="nav-item" id="nav-item-2">
+      <img src="./4-1-images/pill.png" class="nav-item" id="nav-item-3">
+      <img src="./4-2-images/bug.png" class="nav-item" id="nav-item-4">
+      <img src="./4-3-images/present.png" class="nav-item" id="nav-item-4">
+    </div>
+  </section>
+  <!-- --------nav----------->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script src="./4-3.js"></script>
+</body>
+</html>
